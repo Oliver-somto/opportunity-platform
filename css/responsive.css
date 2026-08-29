@@ -1,0 +1,147 @@
+@media (max-width: 900px) {
+  
+  .hero {
+    background-image:
+      url("/images/opportunities/background-mobile.jpg");
+    background-position: center center;
+  }
+  
+  .header-inner {
+    min-height: 72px;
+  }
+  
+  .logo img {
+    max-width: 150px;
+    max-height: 44px;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 12px 20px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    box-shadow:
+      0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .main-nav.menu-open {
+    display: flex;
+  }
+  
+  .main-nav a {
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 15px;
+  }
+  
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
+  
+  .hero {
+    min-height: 650px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  
+  .hero-label {
+    margin-bottom: 14px;
+    
+    font-size: 12px;
+    
+    letter-spacing: 1px;
+  }
+  
+  .hero h1 {
+    max-width: 600px;
+    margin-bottom: 22px;
+    font-size: clamp(38px, 10vw, 54px);
+    line-height: 1.08;
+    letter-spacing: -1.2px;
+  }
+  
+  .hero-description {
+    margin-bottom: 32px;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  .hero-search {
+    min-height: 62px;
+    
+    border-radius: 12px;
+  }
+  
+  .search-input-wrapper {
+    padding-left: 12px;
+    
+    gap: 8px;
+  }
+  
+  .search-icon {
+    font-size: 25px;
+  }
+  
+  .search-input-wrapper input {
+    font-size: 14px;
+  }
+  
+  .hero-search button {
+    min-height: 50px;
+    
+    padding: 0 18px;
+    
+    border-radius: 8px;
+    
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .hero {
+    padding-top: 65px;
+    padding-bottom: 55px;
+  }
+  
+  .hero h1 {
+    font-size: 38px;
+    letter-spacing: -1px;
+  }
+  
+  .hero-description {
+    font-size: 16px;
+  }
+  
+  .hero-search {
+    min-height: 58px;
+  }
+  
+  .hero-search button {
+    min-height: 46px;
+    padding: 0 14px;
+  }
+  
+}
