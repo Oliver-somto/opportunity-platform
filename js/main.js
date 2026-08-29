@@ -9,3 +9,17 @@ menuToggle.addEventListener("click", () => {
 
   menuToggle.setAttribute("aria-expanded", isOpen);
 });
+
+function navigations(key) {
+  if (key === 'logo') {
+    window.location = '/index.html'
+  }
+  
+  else if (key === '') {
+    
+  }
+  
+  else {
+    alert('Invalid command')
+  }
+}
