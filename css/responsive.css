@@ -112,6 +112,77 @@
     
     font-size: 14px;
   }
+  
+  .platform-intro {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.platform-intro-content {
+  max-width: 100%;
+}
+
+.platform-intro h2 {
+  font-size: clamp(30px, 8vw, 40px);
+  letter-spacing: -0.8px;
+}
+
+.platform-intro-text {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.opportunity-types {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+.opportunity-types-header {
+  margin-bottom: 40px;
+}
+
+.opportunity-types-header h2 {
+  font-size: clamp(30px, 8vw, 40px);
+  letter-spacing: -0.8px;
+}
+
+.opportunity-types-header > p:last-child {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.opportunity-types-grid {
+  grid-template-columns: 1fr;
+
+  gap: 18px;
+
+  max-width: 600px;
+}
+
+.opportunity-type {
+  min-height: 250px;
+
+  padding: 25px;
+
+  border-radius: 14px;
+}
+
+.opportunity-type-icon {
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 18px;
+
+  font-size: 23px;
+}
+
+.opportunity-type h3 {
+  font-size: 20px;
+}
+
+.opportunity-type p {
+  font-size: 15px;
+}
 }
 
 @media (max-width: 400px) {
@@ -144,4 +215,16 @@
     padding: 0 14px;
   }
   
+  .opportunity-types {
+  padding-top: 60px;
+  padding-bottom: 65px;
+}
+
+.opportunity-types-header {
+  margin-bottom: 32px;
+}
+
+.opportunity-type {
+  padding: 22px;
+}
 }
