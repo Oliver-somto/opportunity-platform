@@ -11,7 +11,7 @@ menuToggle.addEventListener("click", () => {
 });
 
 function navigations(key) {
-  if (key === 'logo') {
+  if (key === '') {
     window.location = '/index.html'
   }
   
