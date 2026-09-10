@@ -21,11 +21,6 @@ import {
   serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
-
-/* =================================
-   FIREBASE CONFIGURATION
-================================= */
-
 const firebaseConfig = {
 
   apiKey:
@@ -51,11 +46,6 @@ const firebaseConfig = {
 
 };
 
-
-/* =================================
-   INITIALIZE FIREBASE
-================================= */
-
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
@@ -64,11 +54,6 @@ const db = getFirestore(app);
 
 const googleProvider =
   new GoogleAuthProvider();
-
-
-/* =================================
-   ELEMENTS
-================================= */
 
 const signupForm =
   document.getElementById("signup-form");
@@ -126,11 +111,6 @@ const linkedinAuth =
     "linkedin-auth"
   );
 
-
-/* =================================
-   MESSAGE SYSTEM
-================================= */
-
 function showMessage(
   message,
   type = "error"
@@ -156,11 +136,6 @@ function clearMessage() {
     "auth-message";
 
 }
-
-
-/* =================================
-   AUTH PAGE SWITCHING
-================================= */
 
 function showSignupForm() {
 
@@ -227,11 +202,6 @@ function showForgotPasswordForm() {
 
 }
 
-
-/* =================================
-   AUTH PAGE BUTTONS
-================================= */
-
 if (showSignin) {
 
   showSignin.addEventListener(
@@ -270,11 +240,6 @@ if (backToSignin) {
   );
 
 }
-
-
-/* =================================
-   PASSWORD TOGGLE
-================================= */
 
 function setupPasswordToggle(
   inputId,
@@ -341,11 +306,6 @@ setupPasswordToggle(
   "signin-password-toggle"
 );
 
-
-/* =================================
-   VALIDATION
-================================= */
-
 function isValidEmail(email) {
 
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -381,11 +341,6 @@ function clearInputError(input) {
   );
 
 }
-
-
-/* =================================
-   SAVE USER TO FIRESTORE
-================================= */
 
 async function createUserDocument(
   user,
@@ -440,11 +395,6 @@ async function createUserDocument(
 
 }
 
-
-/* =================================
-   SIGN UP
-================================= */
-
 if (signupForm) {
 
   signupForm.addEventListener(
@@ -489,9 +439,6 @@ if (signupForm) {
         confirmPassword
       );
 
-
-      /* NAME */
-
       if (!name.value.trim()) {
 
         markInputError(name);
@@ -505,9 +452,6 @@ if (signupForm) {
         return;
 
       }
-
-
-      /* EMAIL */
 
       const cleanEmail =
         email.value.trim();
@@ -526,9 +470,6 @@ if (signupForm) {
 
       }
 
-
-      /* PASSWORD */
-
       if (
         !isValidPassword(
           password.value
@@ -546,9 +487,6 @@ if (signupForm) {
         return;
 
       }
-
-
-      /* CONFIRM PASSWORD */
 
       if (
         password.value !==
@@ -569,9 +507,6 @@ if (signupForm) {
 
       }
 
-
-      /* TERMS */
-
       if (!terms.checked) {
 
         showMessage(
@@ -583,9 +518,6 @@ if (signupForm) {
         return;
 
       }
-
-
-      /* LOADING */
 
       const submitButton =
         document.getElementById(
@@ -603,8 +535,6 @@ if (signupForm) {
 
       try {
 
-        /* CREATE FIREBASE ACCOUNT */
-
         const userCredential =
           await createUserWithEmailAndPassword(
             auth,
@@ -616,9 +546,6 @@ if (signupForm) {
         const user =
           userCredential.user;
 
-
-        /* ADD DISPLAY NAME */
-
         await updateProfile(
           user,
           {
@@ -626,9 +553,6 @@ if (signupForm) {
               name.value.trim()
           }
         );
-
-
-        /* SAVE USER IN FIRESTORE */
 
         await createUserDocument(
           user,
@@ -646,9 +570,6 @@ if (signupForm) {
           "Account created successfully!",
           "success"
         );
-
-
-        /* OPTIONAL REDIRECT */
 
         setTimeout(
           function () {
@@ -756,11 +677,6 @@ if (signupForm) {
 
 }
 
-
-/* =================================
-   SIGN IN
-================================= */
-
 if (signinForm) {
 
   signinForm.addEventListener(
@@ -790,9 +706,6 @@ if (signinForm) {
       const cleanEmail =
         email.value.trim();
 
-
-      /* EMAIL */
-
       if (
         !isValidEmail(
           cleanEmail
@@ -810,9 +723,6 @@ if (signinForm) {
         return;
 
       }
-
-
-      /* PASSWORD */
 
       if (!password.value) {
 
@@ -856,9 +766,6 @@ if (signinForm) {
 
         const user =
           userCredential.user;
-
-
-        /* UPDATE USER RECORD */
 
         await createUserDocument(
           user,
@@ -989,11 +896,6 @@ if (signinForm) {
   );
 
 }
-
-
-/* =================================
-   FORGOT PASSWORD
-================================= */
 
 if (forgotPasswordForm) {
 
@@ -1134,11 +1036,6 @@ if (forgotPasswordForm) {
 
 }
 
-
-/* =================================
-   GOOGLE AUTHENTICATION
-================================= */
-
 if (googleAuth) {
 
   googleAuth.addEventListener(
@@ -1212,10 +1109,6 @@ if (googleAuth) {
   );
 
 }
-
-/* =================================
-   GOOGLE REDIRECT RESULT
-================================= */
 
 getRedirectResult(auth)
 
@@ -1334,11 +1227,6 @@ getRedirectResult(auth)
 
   });
 
-
-/* =================================
-   LINKEDIN AUTHENTICATION
-================================= */
-
 if (linkedinAuth) {
 
   linkedinAuth.addEventListener(
@@ -1356,11 +1244,6 @@ if (linkedinAuth) {
   );
 
 }
-
-
-/* =================================
-   CLEAR INPUT ERRORS
-================================= */
 
 const allInputs =
   document.querySelectorAll(
@@ -1396,10 +1279,6 @@ allInputs.forEach(
 );
 
 
-/* =================================
-   AUTH STATE
-================================= */
-
 onAuthStateChanged(
   auth,
   function (user) {
@@ -1410,6 +1289,10 @@ onAuthStateChanged(
         "Authenticated user:",
         user.uid
       );
+      
+      localStorage.setItem('Authenticated user',
+        user.uid);
+      localStorage.setItem("logInTime", Date.now())
 
     } else {
 
@@ -1422,9 +1305,5 @@ onAuthStateChanged(
   }
 );
 
-
-/* =================================
-   INITIAL STATE
-================================= */
 
 showSignupForm();

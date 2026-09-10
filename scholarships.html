@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet"
-    href="/css/style.css">
   
-  <link rel="stylesheet"
-    href="/css/responsive.css">
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Scholarships | Opportunity Platform</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/css/components.css">
+  
+  <link rel="stylesheet" href="/css/responsive.css">
+  
 </head>
 
+
 <body>
+  
+  
+  <!-- =================================
+       HEADER
+  ================================== -->
+  
   <header class="header">
     
     <div class="container">
       
       <div class="header-inner">
         
+        
         <div class="logo">
           
           <a href="index.html">
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+          
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+            
           </a>
           
         </div>
         
-        <button class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false">
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
         
           <span></span>
           <span></span>
@@ -41,8 +51,8 @@
           
         </button>
         
-        <nav class="main-nav"
-          id="navigation">
+        
+        <nav class="main-nav" id="navigation">
           
           <a href="index.html">
             Home
@@ -58,6 +68,12 @@
           
           <a href="fellowships.html">
             Fellowships
+          </a>
+          
+          <a href="auth.html" class="signUp">
+          
+            Sign up
+            
           </a>
           
           <a href="about.html">
@@ -76,7 +92,460 @@
     
   </header>
   
+  
+  
+  <!-- =================================
+       SCHOLARSHIP HERO
+  ================================== -->
+  
+  <main>
+    
+    
+    <section class="scholarship-hero">
+      
+      <div class="container">
+        
+        <div class="scholarship-hero-content">
+          
+          
+          <p class="section-label">
+            SCHOLARSHIPS
+          </p>
+          
+          
+          <h1>
+            Find Scholarships
+            <span>For Your Future.</span>
+          </h1>
+          
+          
+          <p>
+            
+            Discover scholarships and funding
+            opportunities from universities,
+            organizations, governments, and
+            institutions around the world.
+            
+          </p>
+          
+          
+          <form class="scholarship-search" id="scholarship-search">
+            
+            <div class="scholarship-search-input">
+              
+              <span aria-hidden="true">
+                ⌕
+              </span>
+              
+              <input type="search" id="scholarship-search-input" placeholder="Search scholarships..." aria-label="Search scholarships">
+              
+            </div>
+            
+            
+            <button type="submit">
+              Search
+            </button>
+            
+          </form>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    
+    
+    <!-- =================================
+         SCHOLARSHIP CONTENT
+    ================================== -->
+    
+    <section class="scholarship-section">
+      
+      <div class="container">
+        
+        
+        <div class="scholarship-layout">
+          
+          
+          <!-- =================================
+               FILTERS
+          ================================== -->
+          
+          <aside class="scholarship-filters">
+            
+            <div class="filters-header">
+              
+              <h2>
+                Filter
+              </h2>
+              
+              <button type="button" id="clear-filters">
+              
+                Clear all
+                
+              </button>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="study-level">
+                Study Level
+              </label>
+              
+              <select id="study-level">
+              
+                <option value="">
+                  All levels
+                </option>
+                
+                <option value="undergraduate">
+                  Undergraduate
+                </option>
+                
+                <option value="masters">
+                  Master's
+                </option>
+                
+                <option value="phd">
+                  PhD
+                </option>
+                
+                <option value="postgraduate">
+                  Postgraduate
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="location">
+                Location
+              </label>
+              
+              <select id="location">
+              
+                <option value="">
+                  Any location
+                </option>
+                
+                <option value="nigeria">
+                  Nigeria
+                </option>
+                
+                <option value="usa">
+                  United States
+                </option>
+                
+                <option value="uk">
+                  United Kingdom
+                </option>
+                
+                <option value="canada">
+                  Canada
+                </option>
+                
+                <option value="australia">
+                  Australia
+                </option>
+                
+                <option value="international">
+                  International
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="funding-type">
+                Funding Type
+              </label>
+              
+              <select id="funding-type">
+              
+                <option value="">
+                  All funding types
+                </option>
+                
+                <option value="fully-funded">
+                  Fully Funded
+                </option>
+                
+                <option value="partial">
+                  Partially Funded
+                </option>
+                
+                <option value="tuition">
+                  Tuition Support
+                </option>
+                
+                <option value="stipend">
+                  Stipend
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+          </aside>
+          
+          
+          
+          <!-- =================================
+               SCHOLARSHIP LISTINGS
+          ================================== -->
+          
+          <div class="scholarship-results">
+            
+            
+            <div class="results-header">
+              
+              <div>
+                
+                <p class="results-label">
+                  OPPORTUNITIES
+                </p>
+                
+                <h2>
+                  Available Scholarships
+                </h2>
+                
+              </div>
+              
+              
+              <select id="sort-scholarships" aria-label="Sort scholarships">
+              
+                <option value="latest">
+                  Latest
+                </option>
+                
+                <option value="deadline">
+                  Deadline
+                </option>
+                
+                <option value="title">
+                  Name
+                  
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            
+            <!-- =================================
+                 LISTINGS
+            ================================== -->
+            
+            <div class="scholarship-grid" id="scholarship-list">
+              
+              <!-- JavaScript will insert
+                   scholarship cards here -->
+              
+            </div>
+            
+            
+            
+            <!-- =================================
+                 EMPTY STATE
+            ================================== -->
+            
+            <div class="scholarship-empty" id="scholarship-empty" hidden>
+              
+              <div class="empty-icon">
+                🔎
+              </div>
+              
+              <h3>
+                No scholarships found
+              </h3>
+              
+              <p>
+                Try changing your search
+                or filters.
+              </p>
+              
+            </div>
+            
+            
+            
+            <!-- =================================
+                 LOAD MORE
+            ================================== -->
+            
+            <div class="scholarship-load-more">
+              
+              <button type="button" id="load-more">
+              
+                Load More
+                
+              </button>
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    
+  </main>
+  
+  
+  
+  <footer class="footer">
+    
+    <div class="container">
+      
+      <div class="footer-main">
+        
+        <div class="footer-brand">
+          
+          <a href="index.html"
+            class="footer-logo">
+          
+            <img
+              src="images/logos/logo.png"
+              alt="Opportunity Platform logo">
+            
+          </a>
+          
+          <p>
+            Discover scholarships,
+            internships,
+            jobs, fellowships, and
+            grants designed
+            to help you take your next
+            step.
+          </p>
+          
+        </div>
+        
+        <div class="footer-column">
+          
+          <h3>
+            Opportunities
+          </h3>
+          
+          <nav class="footer-links">
+            
+            <a href="scholarships.html">
+              Scholarships
+            </a>
+            
+            <a href="internships.html">
+              Internships
+            </a>
+            
+            <a href="jobs.html">
+              Jobs
+            </a>
+            
+            <a href="fellowships.html">
+              Fellowships
+            </a>
+            
+            <a href="grants.html">
+              Grants
+            </a>
+            
+            <a href="auth.html" class="signUp">
+              Sign up
+            </a>
+            
+          </nav>
+          
+        </div>
+        
+        <div class="footer-column">
+          
+          <h3>
+            Platform
+          </h3>
+          
+          <nav class="footer-links">
+            
+            <a href="about.html">
+              About Us
+            </a>
+            
+            <a href="contact.html">
+              Contact
+            </a>
+          </nav>
+          
+        </div>
+        
+        <div
+          class="footer-column footer-connect">
+          
+          <h3>
+            Stay Connected
+          </h3>
+          
+          <p>
+            Stay informed about new
+            opportunities
+            and important updates.
+          </p>
+          
+          <a href="contact.html"
+            class="footer-contact-link">
+            Get in Touch →
+          </a>
+          
+        </div>
+        
+      </div>
+      
+      
+      <div class="footer-bottom">
+        
+        <p>
+          © 2026 Opportunity Platform.
+          All rights reserved.
+        </p>
+        
+        <div class="footer-legal">
+          
+          <a href="#">
+            Privacy Policy
+          </a>
+          
+          <a href="#">
+            Terms of Use
+          </a>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </footer>
+  
+  
   <script src="/js/main.js"></script>
+  
+  <script src="/js/scholarships.js"></script>
+  
+  
 </body>
 
 </html>

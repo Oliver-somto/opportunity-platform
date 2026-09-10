@@ -1,14 +1,606 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <title>Internships | Opportunity Platform</title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="/css/components.css">
+
+  <link
+    rel="stylesheet"
+    href="/css/responsive.css">
+
 </head>
 
+
 <body>
+
+
+  <!-- =================================
+       HEADER
+  ================================== -->
+
+  <header class="header">
+
+    <div class="container">
+
+      <div class="header-inner">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+          <a href="index.html">
+
+            <img
+              src="images/logos/logo.png"
+              alt="Opportunity Platform logo">
+
+          </a>
+
+        </div>
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+
+        <nav
+          class="main-nav"
+          id="navigation">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="scholarships.html">
+            Scholarships
+          </a>
+
+          <a href="jobs.html">
+            Jobs
+          </a>
+
+          <a href="fellowships.html">
+            Fellowships
+          </a>
+
+          <a
+            href="auth.html"
+            class="signUp">
+            Sign up
+          </a>
+
+          <a href="about.html">
+            About
+          </a>
+
+          <a href="contact.html">
+            Contact
+          </a>
+
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =================================
+       INTERNSHIP HERO
+  ================================== -->
+
+  <main>
+
+
+    <section class="internship-hero">
+
+      <div class="container">
+
+        <div class="internship-hero-content">
+
+
+          <p class="section-label">
+            INTERNSHIP OPPORTUNITIES
+          </p>
+
+
+          <h1>
+            Find Internships.
+            <span>Gain Real Experience.</span>
+          </h1>
+
+
+          <p>
+            Discover internships, industrial
+            training, SIWES placements, and
+            work experience opportunities that
+            can help you build your career.
+          </p>
+
+
+          <!-- SEARCH -->
+
+          <form
+            class="internship-search"
+            id="internship-search">
+
+            <div
+              class="internship-search-input">
+
+              <span aria-hidden="true">
+                ⌕
+              </span>
+
+              <input
+                type="search"
+                id="internship-search-input"
+                placeholder="Search internships, companies, fields..."
+                aria-label="Search internships">
+
+            </div>
+
+
+            <button type="submit">
+              Search
+            </button>
+
+          </form>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================
+         INTERNSHIP SECTION
+    ================================== -->
+
+    <section class="internship-section">
+
+      <div class="container">
+
+
+        <div class="internship-layout">
+
+
+          <!-- =================================
+               FILTERS
+          ================================== -->
+
+          <aside class="internship-filters">
+
+
+            <div class="filters-header">
+
+              <h2>
+                Filters
+              </h2>
+
+              <button
+                type="button"
+                id="reset-internship-filters">
+
+                Reset
+
+              </button>
+
+            </div>
+
+
+            <!-- TYPE -->
+
+            <div class="filter-group">
+
+              <label for="internship-type">
+                Internship Type
+              </label>
+
+              <select
+                id="internship-type">
+
+                <option value="all">
+                  All Types
+                </option>
+
+                <option value="SIWES">
+                  SIWES
+                </option>
+
+                <option value="Industrial Training">
+                  Industrial Training
+                </option>
+
+                <option value="Graduate Internship">
+                  Graduate Internship
+                </option>
+
+                <option value="Student Internship">
+                  Student Internship
+                </option>
+
+                <option value="Remote Internship">
+                  Remote Internship
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="filter-group">
+
+              <label for="internship-location">
+                Location
+              </label>
+
+              <select
+                id="internship-location">
+
+                <option value="all">
+                  All Locations
+                </option>
+
+                <option value="Nigeria">
+                  Nigeria
+                </option>
+
+                <option value="Lagos">
+                  Lagos
+                </option>
+
+                <option value="Port Harcourt">
+                  Port Harcourt
+                </option>
+
+                <option value="Abuja">
+                  Abuja
+                </option>
+
+                <option value="Remote">
+                  Remote
+                </option>
+
+                <option value="International">
+                  International
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <!-- FIELD -->
+
+            <div class="filter-group">
+
+              <label for="internship-field">
+                Field
+              </label>
+
+              <select
+                id="internship-field">
+
+                <option value="all">
+                  All Fields
+                </option>
+
+                <option value="Engineering">
+                  Engineering
+                </option>
+
+                <option value="Technology">
+                  Technology
+                </option>
+
+                <option value="Business">
+                  Business
+                </option>
+
+                <option value="Finance">
+                  Finance
+                </option>
+
+                <option value="Marketing">
+                  Marketing
+                </option>
+
+                <option value="Science">
+                  Science
+                </option>
+
+              </select>
+
+            </div>
+
+
+          </aside>
+
+
+
+          <!-- =================================
+               RESULTS
+          ================================== -->
+
+          <div class="internship-results">
+
+
+            <div class="results-header">
+
+
+              <div>
+
+                <p class="results-label">
+                  AVAILABLE OPPORTUNITIES
+                </p>
+
+                <h2>
+                  Latest Internships
+                </h2>
+
+              </div>
+
+
+              <select
+                id="sort-internships"
+                aria-label="Sort internships">
+
+                <option value="deadline">
+                  Deadline
+                </option>
+
+                <option value="newest">
+                  Newest
+                </option>
+
+                <option value="oldest">
+                  Oldest
+                </option>
+
+              </select>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 INTERNSHIP GRID
+            ================================== -->
+
+            <div
+              class="internship-grid"
+              id="internship-grid">
+
+              <!-- JavaScript inserts cards here -->
+
+            </div>
+
+
+
+            <!-- =================================
+                 EMPTY STATE
+            ================================== -->
+
+            <div
+              class="internship-empty"
+              id="internship-empty"
+              hidden>
+
+              <div class="empty-icon">
+                🔎
+              </div>
+
+              <h3>
+                No internships found
+              </h3>
+
+              <p>
+                Try changing your search or
+                adjusting your filters.
+              </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 LOAD MORE
+            ================================== -->
+
+<div class="internship-load-more">
+  <button type="button" id="load-more-internships">
+    Load More
+  </button>
+</div>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer class="footer">
+    
+    <div class="container">
+      
+      <div class="footer-main">
+        
+        <div class="footer-brand">
+          
+          <a href="index.html"
+            class="footer-logo">
+          
+            <img
+              src="images/logos/logo.png"
+              alt="Opportunity Platform logo">
+            
+          </a>
+          
+          <p>
+            Discover scholarships,
+            internships,
+            jobs, fellowships, and
+            grants designed
+            to help you take your next
+            step.
+          </p>
+          
+        </div>
+        
+        <div class="footer-column">
+          
+          <h3>
+            Opportunities
+          </h3>
+          
+          <nav class="footer-links">
+            
+            <a href="scholarships.html">
+              Scholarships
+            </a>
+            
+            <a href="internships.html">
+              Internships
+            </a>
+            
+            <a href="jobs.html">
+              Jobs
+            </a>
+            
+            <a href="fellowships.html">
+              Fellowships
+            </a>
+            
+            <a href="grants.html">
+              Grants
+            </a>
+            
+            <a href="auth.html" class="signUp">
+              Sign up
+            </a>
+            
+          </nav>
+          
+        </div>
+        
+        <div class="footer-column">
+          
+          <h3>
+            Platform
+          </h3>
+          
+          <nav class="footer-links">
+            
+            <a href="about.html">
+              About Us
+            </a>
+            
+            <a href="contact.html">
+              Contact
+            </a>
+          </nav>
+          
+        </div>
+        
+        <div
+          class="footer-column footer-connect">
+          
+          <h3>
+            Stay Connected
+          </h3>
+          
+          <p>
+            Stay informed about new
+            opportunities
+            and important updates.
+          </p>
+          
+          <a href="contact.html"
+            class="footer-contact-link">
+            Get in Touch →
+          </a>
+          
+        </div>
+        
+      </div>
+      
+      
+      <div class="footer-bottom">
+        
+        <p>
+          © 2026 Opportunity Platform.
+          All rights reserved.
+        </p>
+        
+        <div class="footer-legal">
+          
+          <a href="#">
+            Privacy Policy
+          </a>
+          
+          <a href="#">
+            Terms of Use
+          </a>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </footer>
   
+  <script src="/js/main.js"></script>
+
+  <script src="/js/internships.js"></script>
+
+
 </body>
 
 </html>
