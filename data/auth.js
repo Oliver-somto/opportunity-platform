@@ -313,13 +313,11 @@ function isValidEmail(email) {
 
 }
 
-
 function isValidPassword(password) {
 
   return password.length >= 8;
 
 }
-
 
 function markInputError(input) {
 

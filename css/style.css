@@ -7,17 +7,17 @@
 :root {
   --primary-color: #2563eb;
   --primary-dark: #1d4ed8;
-
+  
   --text-color: #172033;
   --text-light: #64748b;
-
+  
   --background-color: #ffffff;
   --background-light: #f8fafc;
-
+  
   --border-color: #e2e8f0;
-
+  
   --header-height: 72px;
-
+  
   --container-width: 98%;
 }
 
@@ -131,9 +131,9 @@ input {
 .container {
   width: 100%;
   max-width: var(--container-width);
-
+  
   margin: 0 auto;
-
+  
   padding-left: 20px;
   padding-right: 20px;
 }

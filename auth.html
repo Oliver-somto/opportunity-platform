@@ -2,268 +2,174 @@
 <html lang="en">
 
 <head>
-
+  
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1">
-
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>Authentication | Opportunity Platform</title>
   <link rel="stylesheet" href="/css/auth.css">
-
+  
 </head>
 
 
 <body>
-
-
+  
+  
   <main class="auth-page">
-
-
-    <!-- =================================
-         AUTHENTICATION CONTAINER
-    ================================== -->
-
+    
     <section class="auth-container">
-
-
-      <!-- =================================
-           AUTH BRAND
-      ================================== -->
-
+      
       <div class="auth-brand">
-
-        <a
-          href="index.html"
-          class="auth-logo">
-
-          <img
-            src="images/logos/logo.png"
-            alt="Opportunity Platform logo">
-
+        
+        <a href="index.html" class="auth-logo">
+        
+          <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+          
         </a>
-
+        
         <p class="auth-brand-text">
           Your next opportunity starts here.
         </p>
-
+        
       </div>
-
-
-      <!-- =================================
-           AUTH CARD
-      ================================== -->
-
+      
       <div class="auth-card">
-
-
-        <!-- =================================
-             AUTH HEADER
-        ================================== -->
-
+        
         <div class="auth-header">
-
+          
           <p class="auth-section-label">
             WELCOME
           </p>
-
+          
           <h1 class="auth-title">
             Create your account
           </h1>
-
+          
           <p class="auth-description">
             Join Opportunity Platform and
             discover opportunities that can
             help you move forward.
           </p>
-
+          
         </div>
-
-
-        <!-- =================================
-             AUTH MESSAGES
-        ================================== -->
-
-        <div
-          class="auth-message"
-          id="auth-message"
-          role="alert"
-          aria-live="polite">
-
+        
+        <div class="auth-message" id="auth-message" role="alert" aria-live="polite">
+          
         </div>
-
-
-        <!-- =================================
-             SOCIAL AUTHENTICATION
-        ================================== -->
-
+        
         <div class="social-auth">
-
-
-          <button
-            type="button"
-            class="social-auth-button"
-            id="google-auth">
-
-            <span
-              class="social-icon"
-              aria-hidden="true">
+          
+          
+          <button type="button" class="social-auth-button" id="google-auth">
+          
+            <span class="social-icon" aria-hidden="true">
               G
             </span>
-
+            
             <span>
               Continue with Google
             </span>
-
+            
           </button>
-
-
-          <button
-            type="button"
-            class="social-auth-button"
-            id="linkedin-auth">
-
-            <span
-              class="social-icon"
-              aria-hidden="true">
+          
+          
+          <button type="button" class="social-auth-button" id="linkedin-auth">
+          
+            <span class="social-icon" aria-hidden="true">
               in
             </span>
-
+            
             <span>
               Continue with LinkedIn
             </span>
-
+            
           </button>
-
-
+          
+          
         </div>
-
-
-        <!-- =================================
-             DIVIDER
-        ================================== -->
-
+        
         <div class="auth-divider">
-
+          
           <span>
             OR
           </span>
-
+          
         </div>
-
-
-        <!-- =================================
-             SIGN UP FORM
-        ================================== -->
-
-        <form
-          class="auth-form"
-          id="signup-form"
-          novalidate>
-
-
+        
+        <form class="auth-form" id="signup-form" novalidate>
+          
+          
           <div class="form-group">
-
+            
             <label for="signup-name">
               Full name
             </label>
-
-            <input
-              type="text"
-              id="signup-name"
-              name="name"
-              placeholder="Enter your full name"
-              autocomplete="name">
-
+            
+            <input type="text" id="signup-name" name="name" placeholder="Enter your full name" autocomplete="name">
+            
           </div>
-
-
+          
+          
           <div class="form-group">
-
+            
             <label for="signup-email">
               Email address
             </label>
-
-            <input
-              type="email"
-              id="signup-email"
-              name="email"
-              placeholder="Enter your email"
-              autocomplete="email">
-
+            
+            <input type="email" id="signup-email" name="email" placeholder="Enter your email" autocomplete="email">
+            
           </div>
-
-
+          
+          
           <div class="form-group">
-
+            
             <label for="signup-password">
               Password
             </label>
-
+            
             <div class="password-field">
-
-              <input
-                type="password"
-                id="signup-password"
-                name="password"
-                placeholder="Create a password"
-                autocomplete="new-password">
-
-              <button
-                type="button"
-                class="password-toggle"
-                id="signup-password-toggle"
-                aria-label="Show password">
-
+              
+              <input type="password" id="signup-password" name="password" placeholder="Create a password" autocomplete="new-password">
+              
+              <button type="button" class="password-toggle" id="signup-password-toggle" aria-label="Show password">
+              
                 Show
-
+                
               </button>
-
+              
             </div>
-
+            
           </div>
-
-
+          
+          
           <div class="form-group">
-
+            
             <label for="signup-confirm-password">
               Confirm password
             </label>
-
+            
             <div class="password-field">
-
-              <input
-                type="password"
-                id="signup-confirm-password"
-                name="confirm-password"
-                placeholder="Confirm your password"
-                autocomplete="new-password">
-
-              <button
-                type="button"
-                class="password-toggle"
-                id="signup-confirm-password-toggle"
-                aria-label="Show password">
-
+              
+              <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" autocomplete="new-password">
+              
+              <button type="button" class="password-toggle" id="signup-confirm-password-toggle" aria-label="Show password">
+              
                 Show
-
+                
               </button>
-
+              
             </div>
-
+            
           </div>
-
-
+          
+          
           <div class="form-agreement">
-
+            
             <label>
-
-              <input
-                type="checkbox"
-                id="terms"
-                name="terms">
-
+            
+              <input type="checkbox" id="terms" name="terms">
+              
               <span>
                 I agree to the
                 <a href="#">
@@ -274,244 +180,168 @@
                   Privacy Policy
                 </a>.
               </span>
-
+              
             </label>
-
+            
           </div>
-
-
-          <button
-            type="submit"
-            class="auth-submit"
-            id="signup-submit">
-
+          
+          
+          <button type="submit" class="auth-submit" id="signup-submit">
+          
             Create Account
-
+            
           </button>
-
-
+          
+          
         </form>
-
-
-        <!-- =================================
-             SIGN IN FORM
-        ================================== -->
-
-        <form
-          class="auth-form"
-          id="signin-form"
-          novalidate
-          hidden>
-
-
+        
+        <form class="auth-form" id="signin-form" novalidate hidden>
+          
+          
           <div class="form-group">
-
+            
             <label for="signin-email">
               Email address
             </label>
-
-            <input
-              type="email"
-              id="signin-email"
-              name="email"
-              placeholder="Enter your email"
-              autocomplete="email">
-
+            
+            <input type="email" id="signin-email" name="email" placeholder="Enter your email" autocomplete="email">
+            
           </div>
-
-
+          
+          
           <div class="form-group">
-
+            
             <label for="signin-password">
               Password
             </label>
-
+            
             <div class="password-field">
-
-              <input
-                type="password"
-                id="signin-password"
-                name="password"
-                placeholder="Enter your password"
-                autocomplete="current-password">
-
-              <button
-                type="button"
-                class="password-toggle"
-                id="signin-password-toggle"
-                aria-label="Show password">
-
+              
+              <input type="password" id="signin-password" name="password" placeholder="Enter your password" autocomplete="current-password">
+              
+              <button type="button" class="password-toggle" id="signin-password-toggle" aria-label="Show password">
+              
                 Show
-
+                
               </button>
-
+              
             </div>
-
+            
           </div>
-
-
+          
+          
           <div class="auth-form-options">
-
+            
             <label class="remember-me">
-
-              <input
-                type="checkbox"
-                id="remember-me"
-                name="remember-me">
-
+            
+              <input type="checkbox" id="remember-me" name="remember-me">
+              
               <span>
                 Remember me
               </span>
-
+              
             </label>
-
-
-            <button
-              type="button"
-              class="forgot-password"
-              id="forgot-password">
-
+            
+            
+            <button type="button" class="forgot-password" id="forgot-password">
+            
               Forgot password?
-
+              
             </button>
-
+            
           </div>
-
-
-          <button
-            type="submit"
-            class="auth-submit"
-            id="signin-submit">
-
+          
+          
+          <button type="submit" class="auth-submit" id="signin-submit">
+          
             Sign In
-
+            
           </button>
-
-
+          
+          
         </form>
-
-
-        <!-- =================================
-             FORGOT PASSWORD FORM
-        ================================== -->
-
-        <form
-          class="auth-form"
-          id="forgot-password-form"
-          novalidate
-          hidden>
-
-
+        
+        <form class="auth-form" id="forgot-password-form" novalidate hidden>
+          
+          
           <div class="auth-form-icon">
             🔐
           </div>
-
-
+          
+          
           <div class="form-group">
-
+            
             <label for="reset-email">
               Email address
             </label>
-
-            <input
-              type="email"
-              id="reset-email"
-              name="email"
-              placeholder="Enter your account email"
-              autocomplete="email">
-
+            
+            <input type="email" id="reset-email" name="email" placeholder="Enter your account email" autocomplete="email">
+            
           </div>
-
-
-          <button
-            type="submit"
-            class="auth-submit"
-            id="reset-submit">
-
+          
+          
+          <button type="submit" class="auth-submit" id="reset-submit">
+          
             Send Reset Link
-
+            
           </button>
-
-
-          <button
-            type="button"
-            class="auth-back-button"
-            id="back-to-signin">
-
+          
+          
+          <button type="button" class="auth-back-button" id="back-to-signin">
+          
             ← Back to Sign In
-
+            
           </button>
-
-
+          
+          
         </form>
-
-
-        <!-- =================================
-             AUTH SWITCH
-        ================================== -->
-
+        
         <div class="auth-switch">
-
-
+          
+          
           <p id="signup-switch">
-
+            
             Already have an account?
-
-            <button
-              type="button"
-              id="show-signin">
-
+            
+            <button type="button" id="show-signin">
+            
               Sign In
-
+              
             </button>
-
+            
           </p>
-
-
-          <p
-            id="signin-switch"
-            hidden>
-
+          
+          
+          <p id="signin-switch" hidden>
+            
             Don't have an account?
-
-            <button
-              type="button"
-              id="show-signup">
-
+            
+            <button type="button" id="show-signup">
+            
               Create an account
-
+              
             </button>
-
+            
           </p>
-
-
+          
+          
         </div>
-
-
+        
+        
       </div>
-
-
-      <!-- =================================
-           BACK TO WEBSITE
-      ================================== -->
-
-      <a
-        href="index.html"
-        class="auth-back-home">
-
+      
+      <a href="index.html" class="auth-back-home">
+      
         ← Back to Opportunity Platform
-
+        
       </a>
-
-
+      
     </section>
-
-
+    
   </main>
-
+  
   <script type="module" src="/data/auth.js"></script>
-
-
+  
 </body>
 
 </html>

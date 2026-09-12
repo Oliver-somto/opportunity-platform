@@ -1,13 +1,584 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  
+  <title>Contact Us | Opportunity Platform</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/responsive.css">
 </head>
 
 <body>
+  
+  <header class="header">
+    
+    <div class="container">
+      
+      <div class="header-inner">
+        
+        <div class="logo">
+          
+          <a href="index.html">
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+          </a>
+          
+        </div>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        
+          <span></span>
+          <span></span>
+          <span></span>
+          
+        </button>
+        
+        <nav class="main-nav" id="navigation">
+          
+          <a href="scholarships.html">
+            Scholarships
+          </a>
+          
+          <a href="jobs.html">
+            Jobs
+          </a>
+          
+          <a href="internships.html">
+            Internships
+          </a>
+          
+          <a href="fellowships.html">
+            Fellowships
+          </a>
+          
+          <a href="auth.html" class="signUp">
+            Sign up
+          </a>
+          
+          <a href="about.html">
+            About
+          </a>
+          
+          <a href="contact.html">
+            Contact
+          </a>
+          
+        </nav>
+        
+      </div>
+      
+    </div>
+    
+  </header>
+  
+  
+  <main>
+    
+    <section class="contact-hero">
+      
+      <div class="contact-hero-content">
+        
+        <span class="contact-section-label">
+          GET IN TOUCH
+        </span>
+        
+        <h1>
+          We're here to
+          <span>help.</span>
+        </h1>
+        
+        <p>
+          Have a question, found an incorrect listing, or want to
+          share an opportunity with us? We'd love to hear from you.
+        </p>
+        
+      </div>
+      
+    </section>
+    
+    <section class="contact-options">
+      
+      <div class="contact-container">
+        
+        <div class="contact-options-header">
+          
+          <span class="contact-section-label">
+            CONTACT US
+          </span>
+          
+          <h2>
+            How can we help?
+          </h2>
+          
+          <p>
+            Choose the option that best describes what you need.
+            We'll do our best to point you in the right direction.
+          </p>
+          
+        </div>
+        
+        
+        <div class="contact-options-grid">
+          
+          <div class="contact-option-card">
+            
+            <div class="contact-option-icon">
+              💬
+            </div>
+            
+            <h3>
+              General Questions
+            </h3>
+            
+            <p>
+              Have a question about the platform, how it works,
+              or how to use our opportunity listings?
+            </p>
+            
+            <a href="mailto:kingssolution.ng@gmail.com">
+              Send us a message →
+            </a>
+            
+          </div>
+          
+          
+          <div class="contact-option-card">
+            
+            <div class="contact-option-icon">
+              ⚠️
+            </div>
+            
+            <h3>
+              Report an Issue
+            </h3>
+            
+            <p>
+              Found an expired opportunity, incorrect information,
+              broken link, or something that doesn't look right?
+            </p>
+            
+            <a href="mailto:kingssolution.ng@gmail.com">
+              Report an issue →
+            </a>
+            
+          </div>
+          
+          
+          <div class="contact-option-card">
+            
+            <div class="contact-option-icon">
+              📢
+            </div>
+            
+            <h3>
+              Submit an Opportunity
+            </h3>
+            
+            <p>
+              Know about a scholarship, internship, job, fellowship,
+              or grant that should be listed on the platform?
+            </p>
+            
+            <a href="mailto:kingssolution.ng@gmail.com">
+              Submit an opportunity →
+            </a>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="contact-form-section">
+      
+      <div class="contact-form-container">
+        
+        <div class="contact-form-intro">
+          
+          <span class="contact-section-label">
+            SEND A MESSAGE
+          </span>
+          
+          <h2>
+            Tell us what's on your mind.
+          </h2>
+          
+          <p>
+            Whether you have a question, suggestion, or need to
+            report a problem, use the form and we'll take a look.
+          </p>
+          
+          <div class="contact-direct">
+            
+            <div class="contact-direct-item">
+              
+              <span class="contact-direct-icon">
+                ✉️
+              </span>
+              
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:kingssolution.ng@gmail.com">
+                  kingssolution.ng@gmail.com
+                </a>
+              </div>
+              
+            </div>
+            
+            
+            <div class="contact-direct-item">
+              
+              <span class="contact-direct-icon">
+                🌍
+              </span>
+              
+              <div>
+                <strong>Platform</strong>
+                <span>
+                  Opportunity Platform
+                </span>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        
+        <form class="contact-form" id="contact-form">
+          
+          <div class="contact-form-row">
+            
+            <div class="contact-form-group">
+              
+              <label for="contact-name">
+                Your name
+              </label>
+              
+              <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+              
+            </div>
+            
+            
+            <div class="contact-form-group">
+              
+              <label for="contact-email">
+                Email address
+              </label>
+              
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+              
+            </div>
+            
+          </div>
+          
+          
+          <div class="contact-form-group">
+            
+            <label for="contact-subject">
+              Subject
+            </label>
+            
+            <select id="contact-subject" name="subject" required>
+            
+              <option value="">
+                Select a subject
+              </option>
+              
+              <option value="general">
+                General question
+              </option>
+              
+              <option value="report">
+                Report an issue
+              </option>
+              
+              <option value="submit">
+                Submit an opportunity
+              </option>
+              
+              <option value="feedback">
+                Feedback or suggestion
+              </option>
+              
+              <option value="other">
+                Other
+              </option>
+              
+            </select>
+            
+          </div>
+          
+          
+          <div class="contact-form-group">
+            
+            <label for="contact-message">
+              Message
+            </label>
+            
+            <textarea id="contact-message" name="message" rows="7" placeholder="Write your message here..." required></textarea>
+            
+          </div>
+          
+          
+          <button type="submit" class="contact-submit">
+            Send Message
+          </button>
+          
+          <p class="contact-form-note">
+            We aim to review messages and respond as soon as possible.
+          </p>
+          
+        </form>
+        
+      </div>
+      
+    </section>
+    
+    <section class="contact-faq">
+      
+      <div class="contact-faq-container">
+        
+        <div class="contact-faq-header">
+          
+          <span class="contact-section-label">
+            BEFORE YOU CONTACT US
+          </span>
+          
+          <h2>
+            Frequently asked questions
+          </h2>
+          
+        </div>
+        
+        
+        <div class="contact-faq-list">
+          
+          <details class="contact-faq-item">
+            
+            <summary>
+              Can I apply for an opportunity through this platform?
+            </summary>
+            
+            <p>
+              No. Opportunity Platform helps you discover opportunities
+              and provides links to the official application pages.
+              You complete your application directly with the organization
+              offering the opportunity.
+            </p>
+            
+          </details>
+          
+          
+          <details class="contact-faq-item">
+            
+            <summary>
+              Can I submit an opportunity to be listed?
+            </summary>
+            
+            <p>
+              Yes. If you know about a legitimate scholarship, job,
+              internship, fellowship, or grant that may be useful to
+              our users, contact us with the relevant information and
+              official source.
+            </p>
+            
+          </details>
+          
+          
+          <details class="contact-faq-item">
+            
+            <summary>
+              What should I do if I find an expired opportunity?
+            </summary>
+            
+            <p>
+              Please let us know. Include the opportunity title and
+              the relevant link if possible so we can review the listing
+              and update or remove it.
+            </p>
+            
+          </details>
+          
+          
+          <details class="contact-faq-item">
+            
+            <summary>
+              Do you charge users to access opportunities?
+            </summary>
+            
+            <p>
+              No. The platform is designed to make opportunity discovery
+              accessible without charging users to browse opportunity
+              information.
+            </p>
+            
+          </details>
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="contact-cta">
+      
+      <div class="contact-cta-content">
+        
+        <h2>
+          Looking for an opportunity?
+        </h2>
+        
+        <p>
+          You may not need to contact us at all. Start exploring
+          scholarships, jobs, internships, fellowships, and grants.
+        </p>
+        
+        <a href="index.html" class="contact-cta-button">
+          Explore Opportunities
+        </a>
+        
+      </div>
+      
+    </section>
+    
+  </main>
+  
+  
+  <footer class="footer">
+    
+    <div class="container">
+      
+      <div class="footer-main">
+        
+        <div class="footer-brand">
+          
+          <a href="index.html" class="footer-logo">
+          
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+            
+          </a>
+          
+          <p>
+            Discover scholarships,
+            internships,
+            jobs, fellowships, and
+            grants designed
+            to help you take your next
+            step.
+          </p>
+          
+        </div>
+        
+        <div class="footer-column">
+          
+          <h3>
+            Opportunities
+          </h3>
+          
+          <nav class="footer-links">
+            
+            <a href="scholarships.html">
+              Scholarships
+            </a>
+            
+            <a href="internships.html">
+              Internships
+            </a>
+            
+            <a href="jobs.html">
+              Jobs
+            </a>
+            
+            <a href="fellowships.html">
+              Fellowships
+            </a>
+            
+            <a href="grants.html">
+              Grants
+            </a>
+            
+            <a href="auth.html" class="signUp">
+              Sign up
+            </a>
+            
+          </nav>
+          
+        </div>
+        
+        <div class="footer-column">
+          
+          <h3>
+            Platform
+          </h3>
+          
+          <nav class="footer-links">
+            
+            <a href="about.html">
+              About Us
+            </a>
+            
+            <a href="contact.html">
+              Contact
+            </a>
+          </nav>
+          
+        </div>
+        
+        <div class="footer-column footer-connect">
+          
+          <h3>
+            Stay Connected
+          </h3>
+          
+          <p>
+            Stay informed about new
+            opportunities
+            and important updates.
+          </p>
+          
+          <a href="contact.html" class="footer-contact-link">
+            Get in Touch →
+          </a>
+          
+        </div>
+        
+      </div>
+      
+      
+      <div class="footer-bottom">
+        
+        <p>
+          © 2026 Opportunity Platform.
+          All rights reserved.
+        </p>
+        
+        <div class="footer-legal">
+          
+          <a href="#">
+            Privacy Policy
+          </a>
+          
+          <a href="#">
+            Terms of Use
+          </a>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </footer>
+  
+  <script src="/js/main.js"></script>
   
 </body>
 

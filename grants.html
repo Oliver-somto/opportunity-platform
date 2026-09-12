@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  
+  <title>Grants | Opportunity Platform</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/css/components.css">
+  
+  <link rel="stylesheet" href="/css/responsive.css">
+  
+  <link rel="stylesheet" href="/css/grants.css">
+  
 </head>
+
 
 <body>
   
@@ -18,17 +31,12 @@
         <div class="logo">
           
           <a href="index.html">
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
           </a>
           
         </div>
         
-        <button class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
         
           <span></span>
           <span></span>
@@ -36,8 +44,7 @@
           
         </button>
         
-        <nav class="main-nav"
-          id="navigation">
+        <nav class="main-nav" id="navigation">
           
           <a href="scholarships.html">
             Scholarships
@@ -75,11 +82,278 @@
     
   </header>
   
+  <main>
+    
+    
+    <section class="grant-hero">
+      
+      <div class="container">
+        
+        <div class="grant-hero-content">
+          
+          
+          <p class="section-label">
+            GRANTS
+          </p>
+          
+          
+          <h1>
+            Find Grants
+            <span>For Your Future.</span>
+          </h1>
+          
+          
+          <p>
+            
+            Discover grants and funding
+            opportunities from universities,
+            organizations, governments, and
+            institutions around the world.
+            
+          </p>
+          
+          
+          <form class="grant-search" id="grant-search">
+            
+            <div class="grant-search-input">
+              
+              <span aria-hidden="true">
+                ⌕
+              </span>
+              
+              <input type="search" id="grant-search-input" placeholder="Search grants..." aria-label="Search grants">
+              
+            </div>
+            
+            
+            <button type="submit">
+              Search
+            </button>
+            
+          </form>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="grant-section">
+      
+      <div class="container">
+        
+        
+        <div class="grant-layout">
+          
+          <aside class="grant-filters">
+            
+            <div class="filters-header">
+              
+              <h2>
+                Filter
+              </h2>
+              
+              <button type="button" id="clear-filters">
+              
+                Clear all
+                
+              </button>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="study-level">
+                Study Level
+              </label>
+              
+              <select id="study-level">
+              
+                <option value="">
+                  All levels
+                </option>
+                
+                <option value="undergraduate">
+                  Undergraduate
+                </option>
+                
+                <option value="masters">
+                  Master's
+                </option>
+                
+                <option value="phd">
+                  PhD
+                </option>
+                
+                <option value="postgraduate">
+                  Postgraduate
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="location">
+                Location
+              </label>
+              
+              <select id="location">
+              
+                <option value="">
+                  Any location
+                </option>
+                
+                <option value="nigeria">
+                  Nigeria
+                </option>
+                
+                <option value="usa">
+                  United States
+                </option>
+                
+                <option value="uk">
+                  United Kingdom
+                </option>
+                
+                <option value="canada">
+                  Canada
+                </option>
+                
+                <option value="australia">
+                  Australia
+                </option>
+                
+                <option value="international">
+                  International
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="funding-type">
+                Funding Type
+              </label>
+              
+              <select id="funding-type">
+              
+                <option value="">
+                  All funding types
+                </option>
+                
+                <option value="fully-funded">
+                  Fully Funded
+                </option>
+                
+                <option value="partial">
+                  Partially Funded
+                </option>
+                
+                <option value="tuition">
+                  Tuition Support
+                </option>
+                
+                <option value="stipend">
+                  Stipend
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+          </aside>
+          
+          <div class="grant-results">
+            
+            
+            <div class="results-header">
+              
+              <div>
+                
+                <p class="results-label">
+                  OPPORTUNITIES
+                </p>
+                
+                <h2>
+                  Available Grants
+                </h2>
+                
+              </div>
+              
+              
+              <select id="sort-grants" aria-label="Sort grants">
+              
+                <option value="latest">
+                  Latest
+                </option>
+                
+                <option value="deadline">
+                  Deadline
+                </option>
+                
+                <option value="title">
+                  Name
+                  
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            <div class="grant-grid" id="grant-list">
+              
+            </div>
+            
+            <div class="grant-empty" id="grant-empty" hidden>
+              
+              <div class="empty-icon">
+                🔎
+              </div>
+              
+              <h3>
+                No grants found
+              </h3>
+              
+              <p>
+                Try changing your search
+                or filters.
+              </p>
+              
+            </div>
+            
+            <div class="grant-load-more">
+              
+              <button type="button" id="load-more">
+              
+                Load More
+                
+              </button>
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    
+  </main>
   
-  
-  
-  
-    <footer class="footer">
+  <footer class="footer">
     
     <div class="container">
       
@@ -87,12 +361,9 @@
         
         <div class="footer-brand">
           
-          <a href="index.html"
-            class="footer-logo">
+          <a href="index.html" class="footer-logo">
           
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
             
           </a>
           
@@ -131,10 +402,6 @@
               Fellowships
             </a>
             
-            <a href="grants.html">
-              Grants
-            </a>
-            
             <a href="auth.html" class="signUp">
               Sign up
             </a>
@@ -162,8 +429,7 @@
           
         </div>
         
-        <div
-          class="footer-column footer-connect">
+        <div class="footer-column footer-connect">
           
           <h3>
             Stay Connected
@@ -175,8 +441,7 @@
             and important updates.
           </p>
           
-          <a href="contact.html"
-            class="footer-contact-link">
+          <a href="contact.html" class="footer-contact-link">
             Get in Touch →
           </a>
           
@@ -209,6 +474,10 @@
     </div>
     
   </footer>
+  
+  <script src="/js/main.js"></script>
+  
+  <script src="/js/grants.js"></script>
   
 </body>
 

@@ -32,7 +32,7 @@ function getWithExpiry() {
     const currentTime = Date.now();
     const elapsedTime = currentTime - Number(signInTime);
     
-    if (elapsedTime >= 5400000000) {
+    if (elapsedTime >= 86400000) {
       localStorage.removeItem("Authenticated user");
       localStorage.removeItem("logInTime");
       

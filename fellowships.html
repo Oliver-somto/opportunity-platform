@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  
+  <title>Fellowships | Opportunity Platform</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/css/components.css">
+  
+  <link rel="stylesheet" href="/css/responsive.css">
+  
 </head>
+
 
 <body>
   
@@ -15,20 +26,19 @@
       
       <div class="header-inner">
         
+        
         <div class="logo">
           
           <a href="index.html">
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+          
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+            
           </a>
           
         </div>
         
-        <button class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false">
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
         
           <span></span>
           <span></span>
@@ -36,8 +46,12 @@
           
         </button>
         
-        <nav class="main-nav"
-          id="navigation">
+        
+        <nav class="main-nav" id="navigation">
+          
+          <a href="index.html">
+            Home
+          </a>
           
           <a href="scholarships.html">
             Scholarships
@@ -51,12 +65,10 @@
             Internships
           </a>
           
-          <a href="fellowships.html">
-            Fellowships
-          </a>
-          
           <a href="auth.html" class="signUp">
+          
             Sign up
+            
           </a>
           
           <a href="about.html">
@@ -75,11 +87,280 @@
     
   </header>
   
+  <main>
+    
+    
+    <section class="fellowship-hero">
+      
+      <div class="container">
+        
+        <div class="fellowship-hero-content">
+          
+          
+          <p class="section-label">
+            FELLOWSHIPS
+          </p>
+          
+          
+          <h1>
+            Find Fellowships
+            <span>For Your Future.</span>
+          </h1>
+          
+          
+          <p>
+            
+            Discover fellowships and funding
+            opportunities from universities,
+            organizations, governments, and
+            institutions around the world.
+            
+          </p>
+          
+          
+          <form class="fellowship-search" id="fellowship-search">
+            
+            <div class="fellowship-search-input">
+              
+              <span aria-hidden="true">
+                ⌕
+              </span>
+              
+              <input type="search" id="fellowship-search-input" placeholder="Search fellowships..." aria-label="Search fellowships">
+              
+            </div>
+            
+            
+            <button type="submit">
+              Search
+            </button>
+            
+          </form>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="fellowship-section">
+      
+      <div class="container">
+        
+        
+        <div class="fellowship-layout">
+          
+          <aside class="fellowship-filters">
+            
+            <div class="filters-header">
+              
+              <h2>
+                Filter
+              </h2>
+              
+              <button type="button" id="clear-filters">
+              
+                Clear all
+                
+              </button>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="study-level">
+                Study Level
+              </label>
+              
+              <select id="study-level">
+              
+                <option value="">
+                  All levels
+                </option>
+                
+                <option value="undergraduate">
+                  Undergraduate
+                </option>
+                
+                <option value="masters">
+                  Master's
+                </option>
+                
+                <option value="phd">
+                  PhD
+                </option>
+                
+                <option value="postgraduate">
+                  Postgraduate
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="location">
+                Location
+              </label>
+              
+              <select id="location">
+              
+                <option value="">
+                  Any location
+                </option>
+                
+                <option value="nigeria">
+                  Nigeria
+                </option>
+                
+                <option value="usa">
+                  United States
+                </option>
+                
+                <option value="uk">
+                  United Kingdom
+                </option>
+                
+                <option value="canada">
+                  Canada
+                </option>
+                
+                <option value="australia">
+                  Australia
+                </option>
+                
+                <option value="international">
+                  International
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="funding-type">
+                Funding Type
+              </label>
+              
+              <select id="funding-type">
+              
+                <option value="">
+                  All funding types
+                </option>
+                
+                <option value="fully-funded">
+                  Fully Funded
+                </option>
+                
+                <option value="partial">
+                  Partially Funded
+                </option>
+                
+                <option value="tuition">
+                  Tuition Support
+                </option>
+                
+                <option value="stipend">
+                  Stipend
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+          </aside>
+          
+          <div class="fellowship-results">
+            
+            
+            <div class="results-header">
+              
+              <div>
+                
+                <p class="results-label">
+                  OPPORTUNITIES
+                </p>
+                
+                <h2>
+                  Available Fellowships
+                </h2>
+                
+              </div>
+              
+              
+              <select id="sort-fellowships" aria-label="Sort fellowships">
+              
+                <option value="latest">
+                  Latest
+                </option>
+                
+                <option value="deadline">
+                  Deadline
+                </option>
+                
+                <option value="title">
+                  Name
+                  
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            <div class="fellowship-grid" id="fellowship-list">
+              
+            </div>
+            
+            <div class="fellowship-empty" id="fellowship-empty" hidden>
+              
+              <div class="empty-icon">
+                🔎
+              </div>
+              
+              <h3>
+                No fellowships found
+              </h3>
+              
+              <p>
+                Try changing your search
+                or filters.
+              </p>
+              
+            </div>
+            
+            <div class="fellowship-load-more">
+              
+              <button type="button" id="load-more">
+              
+                Load More
+                
+              </button>
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    
+  </main>
   
   
   
-  
-    <footer class="footer">
+  <footer class="footer">
     
     <div class="container">
       
@@ -87,12 +368,9 @@
         
         <div class="footer-brand">
           
-          <a href="index.html"
-            class="footer-logo">
+          <a href="index.html" class="footer-logo">
           
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
             
           </a>
           
@@ -127,10 +405,6 @@
               Jobs
             </a>
             
-            <a href="fellowships.html">
-              Fellowships
-            </a>
-            
             <a href="grants.html">
               Grants
             </a>
@@ -162,8 +436,7 @@
           
         </div>
         
-        <div
-          class="footer-column footer-connect">
+        <div class="footer-column footer-connect">
           
           <h3>
             Stay Connected
@@ -175,8 +448,7 @@
             and important updates.
           </p>
           
-          <a href="contact.html"
-            class="footer-contact-link">
+          <a href="contact.html" class="footer-contact-link">
             Get in Touch →
           </a>
           
@@ -209,6 +481,12 @@
     </div>
     
   </footer>
+  
+  
+  <script src="/js/main.js"></script>
+  
+  <script src="/js/fellowships.js"></script>
+  
   
 </body>
 

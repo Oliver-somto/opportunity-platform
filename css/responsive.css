@@ -1,124 +1,611 @@
 @media (max-width: 1440px) {
-
+  
   .scholarship-layout {
     grid-template-columns:
-      270px
-      minmax(0, 1fr);
-
+      270px minmax(0, 1fr);
+    
     gap: 70px;
   }
-
-
+  
+  
   .scholarship-grid {
     gap: 30px;
   }
-
-
+  
+  
   .scholarship-card {
     min-height: 330px;
-
+    
     padding: 32px;
   }
-
-
+  
+  
   .scholarship-card h3 {
     font-size: 20px;
   }
-
+  
+  .fellowship-layout {
+    grid-template-columns:
+      270px minmax(0, 1fr);
+    
+    gap: 70px;
+  }
+  
+  
+  .fellowship-grid {
+    gap: 30px;
+  }
+  
+  
+  .fellowship-card {
+    min-height: 330px;
+    
+    padding: 32px;
+  }
+  
+  
+  .fellowship-card h3 {
+    font-size: 20px;
+  }
+  
+  .grant-layout {
+    grid-template-columns:
+      270px minmax(0, 1fr);
+    
+    gap: 70px;
+  }
+  
+  
+  .grant-grid {
+    gap: 30px;
+  }
+  
+  
+  .grant-card {
+    min-height: 330px;
+    
+    padding: 32px;
+  }
+  
+  
+  .grant-card h3 {
+    font-size: 20px;
+  }
+  
+  .job-layout {
+    grid-template-columns:
+      270px minmax(0, 1fr);
+    
+    gap: 70px;
+  }
+  
+  
+  .job-grid {
+    gap: 30px;
+  }
+  
+  
+  .job-card {
+    min-height: 330px;
+    
+    padding: 32px;
+  }
+  
+  
+  .job-card h3 {
+    font-size: 20px;
+  }
+  
 }
 
 @media (max-width: 1366px) {
-
+  
   .scholarship-hero {
     padding-top: 120px;
     padding-bottom: 110px;
   }
-
+  
   .scholarship-hero-content {
     max-width: 900px;
   }
-
+  
   .scholarship-section {
     padding-top: 100px;
     padding-bottom: 120px;
   }
-
+  
   .scholarship-layout {
     grid-template-columns:
-      260px
-      minmax(0, 1fr);
-
+      260px minmax(0, 1fr);
+    
     gap: 60px;
   }
-
+  
   .scholarship-filters {
     padding: 28px;
   }
-
+  
   .results-header {
     margin-bottom: 36px;
   }
-
+  
   .results-header h2 {
     font-size: 32px;
   }
-
+  
   .scholarship-grid {
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
-
+    
     gap: 28px;
   }
-
-
+  
+  
   .scholarship-card {
     min-height: 325px;
-
+    
     padding: 30px;
   }
-
+  
   .scholarship-card h3 {
     font-size: 19px;
   }
-
+  
   .scholarship-card-description {
     max-width: 500px;
-
+    
     font-size: 14px;
   }
-
+  
+  .fellowship-hero {
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+  
+  .fellowship-hero-content {
+    max-width: 900px;
+  }
+  
+  .fellowship-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  
+  .fellowship-layout {
+    grid-template-columns:
+      260px minmax(0, 1fr);
+    
+    gap: 60px;
+  }
+  
+  .fellowship-filters {
+    padding: 28px;
+  }
+  
+  .results-header {
+    margin-bottom: 36px;
+  }
+  
+  .results-header h2 {
+    font-size: 32px;
+  }
+  
+  .fellowship-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    
+    gap: 28px;
+  }
+  
+  
+  .fellowship-card {
+    min-height: 325px;
+    
+    padding: 30px;
+  }
+  
+  .fellowship-card h3 {
+    font-size: 19px;
+  }
+  
+  .fellowship-card-description {
+    max-width: 500px;
+    
+    font-size: 14px;
+  }
+  
+  .grant-hero {
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+  
+  .grant-hero-content {
+    max-width: 900px;
+  }
+  
+  .grant-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  
+  .grant-layout {
+    grid-template-columns:
+      260px minmax(0, 1fr);
+    
+    gap: 60px;
+  }
+  
+  .grant-filters {
+    padding: 28px;
+  }
+  
+  .results-header {
+    margin-bottom: 36px;
+  }
+  
+  .results-header h2 {
+    font-size: 32px;
+  }
+  
+  .grant-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    
+    gap: 28px;
+  }
+  
+  
+  .grant-card {
+    min-height: 325px;
+    
+    padding: 30px;
+  }
+  
+  .grant-card h3 {
+    font-size: 19px;
+  }
+  
+  .grant-card-description {
+    max-width: 500px;
+    
+    font-size: 14px;
+  }
+  
+  .job-hero {
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+  
+  
+  .job-hero-content {
+    max-width: 900px;
+  }
+  
+  
+  .job-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  
+  
+  .job-layout {
+    grid-template-columns:
+      260px minmax(0, 1fr);
+    
+    gap: 60px;
+  }
+  
+  
+  .job-filters {
+    padding: 28px;
+  }
+  
+  
+  .results-header {
+    margin-bottom: 36px;
+  }
+  
+  
+  .results-header h2 {
+    font-size: 32px;
+  }
+  
+  
+  .job-grid {
+    gap: 28px;
+  }
+  
+  
+  .job-card {
+    min-height: 325px;
+    
+    padding: 30px;
+  }
+  
+  
+  .job-card h3 {
+    font-size: 19px;
+  }
+  
+  
+  .job-card-description {
+    max-width: 500px;
+    
+    font-size: 14px;
+  }
+  
+  .contact-container,
+  .contact-form-container {
+    max-width: 1250px;
+  }
+  
+  
+  .contact-options-grid {
+    gap: 28px;
+  }
+  
+  
+  .contact-option-card {
+    min-height: 325px;
+    
+    padding: 34px;
+  }
+  
+  
+  .contact-form-container {
+    gap: 95px;
+  }
+  
+  
+  .contact-form {
+    padding: 40px;
+  }
+  
+  
+  .contact-faq-container {
+    max-width: 1050px;
+  }
+  
 }
 
 
 
 @media (max-width: 1000px) {
-
+  
   .scholarship-layout {
     grid-template-columns:
-      210px
-      minmax(0, 1fr);
-
+      210px minmax(0, 1fr);
+    
     gap: 30px;
   }
-
-
+  
+  
   .scholarship-filters {
     padding: 20px;
   }
-
-
+  
+  
   .scholarship-grid {
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
-
+    
     gap: 18px;
   }
-
-
+  
+  
   .scholarship-card {
     padding: 23px;
   }
-
+  
+  .fellowship-layout {
+    grid-template-columns:
+      210px minmax(0, 1fr);
+    
+    gap: 30px;
+  }
+  
+  
+  .fellowship-filters {
+    padding: 20px;
+  }
+  
+  
+  .fellowship-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    
+    gap: 18px;
+  }
+  
+  
+  .fellowship-card {
+    padding: 23px;
+  }
+  
+  .grant-layout {
+    grid-template-columns:
+      210px minmax(0, 1fr);
+    
+    gap: 30px;
+  }
+  
+  
+  .grant-filters {
+    padding: 20px;
+  }
+  
+  
+  .grant-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    
+    gap: 18px;
+  }
+  
+  
+  .grant-card {
+    padding: 23px;
+  }
+  
+  .job-layout {
+    grid-template-columns:
+      210px minmax(0, 1fr);
+    
+    gap: 30px;
+  }
+  
+  
+  .job-filters {
+    padding: 20px;
+  }
+  
+  
+  .job-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    
+    gap: 18px;
+  }
+  
+  
+  .job-card {
+    padding: 23px;
+  }
+  
+  .about-purpose-grid {
+    gap: 55px;
+  }
+  
+  
+  .about-opportunity-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+  
+  .about-opportunity-card:nth-child(1),
+  .about-opportunity-card:nth-child(2),
+  .about-opportunity-card:nth-child(3),
+  .about-opportunity-card:nth-child(4),
+  .about-opportunity-card:nth-child(5) {
+    grid-column: auto;
+  }
+  
+  
+  .about-trust-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+  
+  
+  .about-audience-box {
+    grid-template-columns: 1fr;
+    
+    gap: 30px;
+  }
+  
+  
+  .about-audience-box>p+p {
+    grid-column: auto;
+    
+    margin-top: 0;
+  }
+  
+  
+  .about-information-box {
+    gap: 55px;
+  }
+  
+  .contact-options-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+  
+  
+  .contact-form-container {
+    grid-template-columns: 1fr;
+    
+    gap: 55px;
+  }
+  
+  
+  .contact-form-intro>p {
+    max-width: 700px;
+  }
+  
+  
+  .contact-direct {
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    
+    gap: 25px 45px;
+  }
+  
+  .opportunity-detail-hero-inner {
+    grid-template-columns:
+      72px minmax(0, 1fr);
+    
+    gap: 20px;
+  }
+  
+  
+  .opportunity-detail-logo {
+    width: 72px;
+    height: 72px;
+  }
+  
+  
+  .opportunity-detail-actions {
+    grid-column: 2;
+    
+    justify-content: flex-start;
+    
+    margin-top: 5px;
+  }
+  
+  
+  .opportunity-detail-meta {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+  
+  
+  .opportunity-detail-meta-item:nth-child(2) {
+    border-right: none;
+  }
+  
+  
+  .opportunity-detail-meta-item:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  
+  .opportunity-detail-layout {
+    grid-template-columns:
+      minmax(0, 1fr) 300px;
+    
+    gap: 45px;
+  }
+  
+  
+  .opportunity-detail-related-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+  
+  .submit-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .submit-form {
+    max-width: none;
+  }
+  
+  .submit-sidebar {
+    position: static;
+  }
+  
 }
 
 @media (max-width: 900px) {
@@ -455,86 +942,252 @@
     gap: 15px;
   }
   
-    .scholarship-hero {
+  .scholarship-hero {
     padding-top: 75px;
     padding-bottom: 70px;
   }
-
-
+  
+  
   .scholarship-hero h1 {
     font-size: clamp(38px, 10vw, 52px);
-
+    
     letter-spacing: -1.5px;
   }
-
-
-  .scholarship-hero-content > p:not(.section-label) {
+  
+  
+  .scholarship-hero-content>p:not(.section-label) {
     font-size: 15px;
   }
-
-
+  
+  
   .scholarship-search {
     flex-direction: column;
-
+    
     gap: 10px;
   }
-
-
+  
+  
   .scholarship-search-input input {
     min-height: 56px;
   }
-
-
+  
+  
   .scholarship-search button {
     min-height: 52px;
-
+    
     width: 100%;
   }
-
-
+  
+  
   .scholarship-section {
     padding-top: 65px;
     padding-bottom: 80px;
   }
-
-
+  
+  
   .scholarship-layout {
     display: block;
   }
-
-
+  
+  
   .scholarship-filters {
     position: static;
-
+    
     margin-bottom: 45px;
   }
-
-
+  
+  
   .results-header {
     align-items: flex-start;
-
+    
     flex-direction: column;
-
+    
     gap: 18px;
   }
-
-
+  
+  
   #sort-scholarships {
     width: 100%;
   }
-
-
+  
+  
   .scholarship-grid {
     grid-template-columns:
       1fr;
-
+    
     gap: 18px;
   }
-
-
+  
+  
   .scholarship-card {
     min-height: 0;
-
+    
+    padding: 23px;
+  }
+  
+  .fellowship-hero {
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+  
+  
+  .fellowship-hero h1 {
+    font-size: clamp(38px, 10vw, 52px);
+    
+    letter-spacing: -1.5px;
+  }
+  
+  
+  .fellowship-hero-content>p:not(.section-label) {
+    font-size: 15px;
+  }
+  
+  
+  .fellowship-search {
+    flex-direction: column;
+    
+    gap: 10px;
+  }
+  
+  
+  .fellowship-search-input input {
+    min-height: 56px;
+  }
+  
+  
+  .fellowship-search button {
+    min-height: 52px;
+    
+    width: 100%;
+  }
+  
+  
+  .fellowship-section {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+  
+  
+  .fellowship-layout {
+    display: block;
+  }
+  
+  
+  .fellowship-filters {
+    position: static;
+    
+    margin-bottom: 45px;
+  }
+  
+  
+  .fellowship-results .results-header {
+    align-items: flex-start;
+    
+    flex-direction: column;
+    
+    gap: 18px;
+  }
+  
+  
+  #sort-fellowships {
+    width: 100%;
+  }
+  
+  
+  .fellowship-grid {
+    grid-template-columns:
+      1fr;
+    
+    gap: 18px;
+  }
+  
+  
+  .fellowship-card {
+    min-height: 0;
+    
+    padding: 23px;
+  }
+  
+  .grant-hero {
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+  
+  
+  .grant-hero h1 {
+    font-size: clamp(38px, 10vw, 52px);
+    
+    letter-spacing: -1.5px;
+  }
+  
+  
+  .grant-hero-content>p:not(.section-label) {
+    font-size: 15px;
+  }
+  
+  
+  .grant-search {
+    flex-direction: column;
+    
+    gap: 10px;
+  }
+  
+  
+  .grant-search-input input {
+    min-height: 56px;
+  }
+  
+  
+  .grant-search button {
+    min-height: 52px;
+    
+    width: 100%;
+  }
+  
+  
+  .grant-section {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+  
+  
+  .grant-layout {
+    display: block;
+  }
+  
+  
+  .grant-filters {
+    position: static;
+    
+    margin-bottom: 45px;
+  }
+  
+  
+  .grant-results .results-header {
+    align-items: flex-start;
+    
+    flex-direction: column;
+    
+    gap: 18px;
+  }
+  
+  
+  #sort-grants {
+    width: 100%;
+  }
+  
+  
+  .grant-grid {
+    grid-template-columns:
+      1fr;
+    
+    gap: 18px;
+  }
+  
+  
+  .grant-card {
+    min-height: 0;
+    
     padding: 23px;
   }
   
@@ -542,85 +1195,1006 @@
     padding-top: 75px;
     padding-bottom: 70px;
   }
-
-
+  
+  
   .internship-hero h1 {
     font-size: clamp(38px, 10vw, 52px);
-
+    
     letter-spacing: -1.5px;
   }
-
-
-  .internship-hero-content > p:not(.section-label) {
+  
+  
+  .internship-hero-content>p:not(.section-label) {
     font-size: 15px;
   }
-
-
+  
+  
   .internship-search {
     flex-direction: column;
-
+    
     gap: 10px;
   }
-
-
+  
+  
   .internship-search-input input {
     min-height: 56px;
   }
-
-
+  
+  
   .internship-search button {
     min-height: 52px;
-
+    
     width: 100%;
   }
-
-
+  
+  
   .internship-section {
     padding-top: 65px;
     padding-bottom: 80px;
   }
-
-
+  
+  
   .internship-layout {
     display: block;
   }
-
-
+  
+  
   .internship-filters {
     position: static;
-
+    
     margin-bottom: 45px;
   }
-
-
+  
+  
   .internship-results .results-header {
     align-items: flex-start;
-
+    
     flex-direction: column;
-
+    
     gap: 18px;
   }
-
-
+  
+  
   #sort-internships {
     width: 100%;
   }
-
-
+  
+  
   .internship-grid {
     grid-template-columns: 1fr;
-
+    
     gap: 18px;
   }
-
-
+  
+  
   .internship-card {
     min-height: 0;
-
+    
     padding: 23px;
   }
   
+  .job-hero {
+    padding-top: 75px;
+    padding-bottom: 70px;
+  }
+  
+  
+  .job-hero h1 {
+    font-size: clamp(38px, 10vw, 52px);
+    
+    letter-spacing: -1.5px;
+  }
+  
+  
+  .job-hero-content>p:not(.section-label) {
+    font-size: 15px;
+    
+    line-height: 1.7;
+  }
+  
+  .job-search {
+    flex-direction: column;
+    
+    gap: 10px;
+    
+    max-width: none;
+  }
+  
+  
+  .job-search-input input {
+    min-height: 56px;
+  }
+  
+  
+  .job-search button {
+    width: 100%;
+    
+    min-height: 52px;
+  }
+  
+  .job-section {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+  
+  .job-layout {
+    display: block;
+  }
+  
+  .job-filters {
+    position: static;
+    
+    width: 100%;
+    
+    margin-bottom: 45px;
+    
+    padding: 22px;
+  }
+  
+  .results-header {
+    flex-direction: column;
+    
+    align-items: stretch;
+    
+    gap: 18px;
+    
+    margin-bottom: 28px;
+  }
+  
+  
+  .results-header h2 {
+    font-size: 28px;
+  }
+  
+  
+  #sort-jobs {
+    width: 100%;
+    
+    min-width: 0;
+  }
+  
+  .job-grid {
+    grid-template-columns: 1fr;
+    
+    gap: 18px;
+  }
+  
+  .job-card {
+    min-height: 0;
+    
+    padding: 23px;
+  }
+  
+  
+  .job-card h3 {
+    font-size: 18px;
+  }
+  
+  
+  .job-card-description {
+    font-size: 13px;
+  }
+  
+  .job-empty {
+    padding: 55px 20px;
+  }
+  
+  .job-load-more {
+    margin-top: 30px;
+  }
+  
+  .submit-hero {
+    padding: 75px 0 80px;
+  }
+  
+  .submit-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  
+  .submit-form {
+    max-width: none;
+  }
+  
+  .submit-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  
+  .submit-sidebar-card {
+    margin-bottom: 0;
+  }
+  
+  .submit-sidebar-card-note {
+    grid-column: 1 / -1;
+  }
+  
 }
+
+@media (max-width: 768px) {
+  
+  .about-hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  
+  .about-purpose {
+    padding-top: 80px;
+    padding-bottom: 85px;
+  }
+  
+  
+  .about-purpose-grid {
+    grid-template-columns: 1fr;
+    
+    gap: 35px;
+  }
+  
+  
+  .about-opportunities {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  
+  
+  .about-how {
+    padding-top: 85px;
+    padding-bottom: 90px;
+  }
+  
+  
+  .about-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  
+  .about-step {
+    min-height: 0;
+  }
+  
+  
+  .about-trust {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  
+  
+  .about-audience {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+  
+  
+  .about-audience-box {
+    padding: 40px;
+  }
+  
+  
+  .about-information {
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+  
+  
+  .about-information-box {
+    grid-template-columns: 1fr;
+    
+    gap: 35px;
+    
+    padding: 40px;
+  }
+  
+  
+  .about-transparency {
+    padding-top: 80px;
+    padding-bottom: 85px;
+  }
+  
+  
+  .about-cta {
+    padding-top: 85px;
+    padding-bottom: 95px;
+  }
+  
+  .contact-hero {
+    padding: 85px 20px 85px;
+  }
+  
+  
+  .contact-options,
+  .contact-form-section,
+  .contact-faq {
+    padding-top: 85px;
+    
+    padding-bottom: 90px;
+  }
+  
+  
+  .contact-options-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  
+  .contact-option-card {
+    min-height: 0;
+  }
+  
+  
+  .contact-form {
+    padding: 30px;
+  }
+  
+  
+  .contact-direct {
+    flex-direction: column;
+    
+    gap: 20px;
+  }
+  
+  
+  .contact-faq-container {
+    max-width: 100%;
+  }
+  
+  
+  .contact-cta {
+    padding-top: 90px;
+    
+    padding-bottom: 100px;
+  }
+  
+  .opportunity-detail-breadcrumb {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  
+  
+  .opportunity-detail-hero {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  
+  
+  .opportunity-detail-hero-inner {
+    grid-template-columns:
+      64px minmax(0, 1fr);
+    
+    gap: 17px;
+  }
+  
+  
+  .opportunity-detail-logo {
+    width: 64px;
+    height: 64px;
+    
+    border-radius: 14px;
+    
+    font-size: 21px;
+  }
+  
+  
+  .opportunity-detail-heading h1 {
+    font-size: 38px;
+    
+    letter-spacing: -1px;
+  }
+  
+  
+  .opportunity-detail-org {
+    font-size: 14px;
+  }
+  
+  
+  .opportunity-detail-actions {
+    grid-column: 1 / -1;
+    
+    margin-top: 8px;
+  }
+  
+  
+  .opportunity-detail-meta {
+    margin-top: 30px;
+  }
+  
+  
+  .opportunity-detail-meta-item {
+    padding: 19px 20px;
+  }
+  
+  
+  .opportunity-detail-section {
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+  
+  
+  .opportunity-detail-layout {
+    grid-template-columns: 1fr;
+    
+    gap: 55px;
+  }
+  
+  
+  .opportunity-detail-main {
+    max-width: none;
+  }
+  
+  
+  .opportunity-detail-sidebar {
+    position: static;
+    
+    display: grid;
+    
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+    
+    gap: 18px;
+  }
+  
+  
+  .opportunity-detail-sidebar-card:first-child {
+    grid-column: 1 / -1;
+  }
+  
+  
+  .opportunity-detail-related {
+    padding-top: 80px;
+    padding-bottom: 90px;
+  }
+  
+  
+  .opportunity-detail-related-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+  
+  .submit-breadcrumb {
+    padding: 15px 0;
+  }
+  
+  .submit-hero {
+    padding: 65px 0 70px;
+  }
+  
+  .submit-hero h1 {
+    font-size: clamp(38px, 8vw, 52px);
+    letter-spacing: -1.5px;
+  }
+  
+  .submit-hero-content>p:last-child {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  .submit-auth-notice {
+    padding: 55px 0;
+  }
+  
+  .submit-auth-notice-card {
+    padding: 27px;
+  }
+  
+  .submit-section {
+    padding: 70px 0 80px;
+  }
+  
+  .submit-form-intro {
+    margin-bottom: 32px;
+  }
+  
+  .submit-form-intro h2 {
+    font-size: 27px;
+  }
+  
+  .submit-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .submit-sidebar {
+    grid-template-columns: 1fr;
+  }
+  
+  .submit-sidebar-card-note {
+    grid-column: auto;
+  }
+  
+  .submit-success {
+    padding: 90px 0 100px;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  
+  .about-hero {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  
+  
+  .about-hero h1 {
+    font-size: 42px;
+    
+    letter-spacing: -1.5px;
+  }
+  
+  
+  .about-hero-content>p:last-child {
+    font-size: 15px;
+  }
+  
+  
+  .about-purpose-heading h2,
+  .about-section-heading h2 {
+    font-size: 34px;
+  }
+  
+  
+  .about-section-heading {
+    margin-bottom: 38px;
+  }
+  
+  
+  .about-opportunity-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  
+  .about-opportunity-card {
+    min-height: 0;
+    
+    padding: 24px;
+  }
+  
+  
+  .about-trust-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  
+  .about-trust-card {
+    min-height: 0;
+    
+    padding: 24px;
+  }
+  
+  
+  .about-audience-box {
+    padding: 30px;
+  }
+  
+  
+  .about-audience-box h2 {
+    font-size: 30px;
+  }
+  
+  
+  .about-information-box {
+    padding: 30px;
+  }
+  
+  
+  .about-information-box h2 {
+    font-size: 30px;
+  }
+  
+  
+  .about-transparency-content {
+    padding-left: 20px;
+  }
+  
+  
+  .about-transparency-content h3 {
+    font-size: 21px;
+  }
+  
+  
+  .about-cta-content h2 {
+    font-size: 38px;
+  }
+  
+  
+  .about-cta-buttons {
+    align-items: stretch;
+    
+    flex-direction: column;
+  }
+  
+  
+  .about-cta-primary,
+  .about-cta-secondary {
+    width: 100%;
+  }
+  
+  .contact-hero h1 {
+    font-size: 42px;
+    
+    letter-spacing: -1.5px;
+  }
+  
+  
+  .contact-hero p {
+    font-size: 15px;
+    
+    line-height: 1.75;
+  }
+  
+  
+  .contact-options-header h2,
+  .contact-form-intro h2,
+  .contact-faq-header h2 {
+    font-size: 34px;
+  }
+  
+  
+  .contact-options-header {
+    margin-bottom: 38px;
+  }
+  
+  
+  .contact-option-card {
+    padding: 26px;
+  }
+  
+  
+  .contact-form-row {
+    grid-template-columns: 1fr;
+    
+    gap: 0;
+  }
+  
+  
+  .contact-form {
+    padding: 25px;
+    
+    border-radius: 15px;
+  }
+  
+  
+  .contact-faq-item {
+    padding: 0 20px;
+  }
+  
+  
+  .contact-faq-item summary {
+    font-size: 15px;
+  }
+  
+  
+  .contact-cta h2 {
+    font-size: 40px;
+  }
+  
+  .opportunity-detail-breadcrumb {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  
+  .breadcrumb-trail {
+    font-size: 12px;
+    
+    gap: 7px;
+  }
+  
+  
+  #breadcrumb-current {
+    max-width: 180px;
+  }
+  
+  
+  .opportunity-detail-hero {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+  
+  
+  .opportunity-detail-hero-inner {
+    grid-template-columns:
+      58px minmax(0, 1fr);
+    
+    gap: 15px;
+  }
+  
+  
+  .opportunity-detail-logo {
+    width: 58px;
+    height: 58px;
+    
+    border-radius: 13px;
+  }
+  
+  
+  .opportunity-detail-type {
+    margin-bottom: 8px;
+    
+    padding: 5px 8px;
+    
+    font-size: 9px;
+  }
+  
+  
+  .opportunity-detail-heading h1 {
+    margin-bottom: 7px;
+    
+    font-size: 31px;
+    
+    line-height: 1.1;
+  }
+  
+  
+  .opportunity-detail-org {
+    font-size: 13px;
+  }
+  
+  
+  .opportunity-detail-actions {
+    width: 100%;
+    
+    gap: 9px;
+  }
+  
+  
+  .opportunity-detail-actions .opportunity-detail-apply {
+    flex: 1;
+  }
+  
+  
+  .opportunity-detail-save {
+    width: 46px;
+    height: 46px;
+  }
+  
+  
+  .opportunity-detail-status {
+    margin-top: 25px;
+  }
+  
+  
+  .opportunity-detail-meta {
+    grid-template-columns: 1fr;
+    
+    margin-top: 25px;
+    
+    border-radius: 13px;
+  }
+  
+  
+  .opportunity-detail-meta-item {
+    padding: 17px 18px;
+    
+    border-right: none;
+    
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  
+  .opportunity-detail-meta-item:last-child {
+    border-bottom: none;
+  }
+  
+  
+  .opportunity-detail-section {
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+  
+  
+  .opportunity-detail-block {
+    margin-bottom: 48px;
+  }
+  
+  
+  .opportunity-detail-block h2 {
+    margin-bottom: 17px;
+    
+    font-size: 24px;
+  }
+  
+  
+  .opportunity-detail-block>div {
+    font-size: 14px;
+    
+    line-height: 1.8;
+  }
+  
+  
+  .opportunity-detail-source {
+    margin-top: 50px;
+    
+    padding: 23px 20px;
+  }
+  
+  
+  .opportunity-detail-updated {
+    font-size: 11px;
+  }
+  
+  
+  .opportunity-detail-sidebar {
+    display: flex;
+    
+    flex-direction: column;
+    
+    gap: 16px;
+  }
+  
+  
+  .opportunity-detail-sidebar-card {
+    padding: 22px;
+  }
+  
+  
+  .opportunity-detail-related {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  
+  
+  .opportunity-detail-related-header {
+    margin-bottom: 35px;
+  }
+  
+  
+  .opportunity-detail-related-header h2 {
+    font-size: 32px;
+  }
+  
+  
+  .opportunity-detail-related-grid {
+    grid-template-columns: 1fr;
+    
+    gap: 18px;
+  }
+  
+  
+  .opportunity-related-card {
+    min-height: 0;
+    
+    padding: 23px;
+  }
+  
+  
+  .opportunity-detail-not-found {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  
+  .submit-breadcrumb-trail {
+    font-size: 12px;
+    gap: 7px;
+  }
+  
+  .submit-hero {
+    padding: 55px 0 60px;
+  }
+  
+  .submit-hero .section-label {
+    margin-bottom: 15px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+  
+  .submit-hero h1 {
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1px;
+  }
+  
+  .submit-hero-content>p:last-child {
+    font-size: 15px;
+  }
+  
+  .submit-auth-notice {
+    padding: 45px 0;
+  }
+  
+  .submit-auth-notice-card {
+    flex-direction: column;
+    gap: 17px;
+    padding: 23px;
+    border-radius: 15px;
+  }
+  
+  .submit-auth-notice-card h2 {
+    font-size: 22px;
+  }
+  
+  .submit-auth-notice-card p {
+    font-size: 14px;
+  }
+  
+  .submit-auth-notice-content .submit-btn-primary {
+    width: 100%;
+  }
+  
+  .submit-section {
+    padding: 60px 0 70px;
+  }
+  
+  .submit-form-intro h2 {
+    font-size: 25px;
+  }
+  
+  .submit-form-intro p {
+    font-size: 14px;
+  }
+  
+  .submit-form-group {
+    margin-bottom: 22px;
+  }
+  
+  .submit-form-group input,
+  .submit-form-group select {
+    min-height: 50px;
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+  
+  .submit-form-group textarea {
+    padding: 13px;
+    font-size: 14px;
+  }
+  
+  .submit-form-divider {
+    margin: 40px 0 25px;
+  }
+  
+  .submit-form-divider span {
+    font-size: 11px;
+    letter-spacing: 0.6px;
+  }
+  
+  .submit-form-checkbox {
+    gap: 9px;
+  }
+  
+  .submit-form-checkbox label {
+    font-size: 12px;
+  }
+  
+  .submit-review-note {
+    padding: 15px;
+  }
+  
+  .submit-review-note p {
+    font-size: 11px;
+  }
+  
+  .submit-form>.submit-btn-primary {
+    min-height: 52px;
+  }
+  
+  .submit-sidebar-card {
+    padding: 23px;
+    border-radius: 14px;
+  }
+  
+  .submit-success {
+    padding: 75px 0 85px;
+  }
+  
+  .submit-success .success-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 28px;
+  }
+  
+  .submit-success h2 {
+    font-size: 30px;
+  }
+  
+  .submit-success p {
+    font-size: 14px;
+  }
+  
+}
+
 
 @media (max-width: 400px) {
   
@@ -687,7 +2261,7 @@
     gap: 18px;
   }
   
-    .scholarship-hero {
+  .scholarship-hero {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -718,5 +2292,506 @@
   .scholarship-view {
     width: 100%;
   }
+  
+  .fellowship-hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  
+  .fellowship-hero h1 {
+    font-size: 38px;
+  }
+  
+  
+  .fellowship-card {
+    padding: 20px;
+  }
+  
+  
+  .fellowship-card h3 {
+    font-size: 17px;
+  }
+  
+  
+  .fellowship-card-bottom {
+    align-items: flex-start;
+    
+    flex-direction: column;
+  }
+  
+  
+  .fellowship-view {
+    width: 100%;
+  }
+  
+  .grant-hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  
+  .grant-hero h1 {
+    font-size: 38px;
+  }
+  
+  
+  .grant-card {
+    padding: 20px;
+  }
+  
+  
+  .grant-card h3 {
+    font-size: 17px;
+  }
+  
+  
+  .grant-card-bottom {
+    align-items: flex-start;
+    
+    flex-direction: column;
+  }
+  
+  
+  .grant-view {
+    width: 100%;
+  }
+  
+  .job-hero {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  
+  .job-hero .section-label {
+    font-size: 12px;
+    
+    letter-spacing: 1.3px;
+  }
+  
+  
+  .job-hero h1 {
+    font-size: 38px;
+    
+    letter-spacing: -1.2px;
+  }
+  
+  
+  .job-hero-content>p:not(.section-label) {
+    font-size: 14px;
+  }
+  
+  
+  .job-section {
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+  
+  
+  .job-filters {
+    padding: 20px;
+    
+    margin-bottom: 35px;
+  }
+  
+  
+  .filters-header {
+    margin-bottom: 24px;
+  }
+  
+  
+  .filter-group {
+    margin-bottom: 20px;
+  }
+  
+  
+  .results-header h2 {
+    font-size: 25px;
+  }
+  
+  
+  .job-card {
+    padding: 20px;
+  }
+  
+  
+  .job-card-top {
+    margin-bottom: 18px;
+  }
+  
+  
+  .job-card-logo {
+    width: 44px;
+    height: 44px;
+  }
+  
+  
+  .job-card h3 {
+    font-size: 17px;
+  }
+  
+  
+  .job-card-description {
+    font-size: 12px;
+    
+    line-height: 1.65;
+  }
+  
+  
+  .job-card-bottom {
+    align-items: flex-start;
+    
+    flex-direction: column;
+    
+    gap: 12px;
+  }
+  
+  
+  .job-view {
+    width: 100%;
+  }
+  
+  
+  .job-empty {
+    padding: 50px 18px;
+  }
+  
+  .about-hero h1 {
+    font-size: 36px;
+  }
+  
+  
+  .about-hero-content>p:last-child {
+    font-size: 14px;
+    
+    line-height: 1.7;
+  }
+  
+  
+  .about-purpose-heading h2,
+  .about-section-heading h2 {
+    font-size: 30px;
+  }
+  
+  
+  .about-purpose-text p {
+    font-size: 14px;
+  }
+  
+  
+  .about-audience-box {
+    padding: 24px;
+  }
+  
+  
+  .about-audience-box h2 {
+    font-size: 27px;
+  }
+  
+  
+  .about-information-box {
+    padding: 24px;
+  }
+  
+  
+  .about-information-box h2 {
+    font-size: 27px;
+  }
+  
+  
+  .about-transparency-content {
+    padding-left: 17px;
+  }
+  
+  
+  .about-cta-content h2 {
+    font-size: 34px;
+  }
+  
+  .contact-hero {
+    padding: 70px 18px;
+  }
+  
+  
+  .contact-hero h1 {
+    font-size: 36px;
+  }
+  
+  
+  .contact-hero p {
+    font-size: 14px;
+    
+    line-height: 1.7;
+  }
+  
+  
+  .contact-options,
+  .contact-form-section,
+  .contact-faq {
+    padding-left: 18px;
+    
+    padding-right: 18px;
+  }
+  
+  
+  .contact-options-header h2,
+  .contact-form-intro h2,
+  .contact-faq-header h2 {
+    font-size: 30px;
+  }
+  
+  
+  .contact-option-card {
+    padding: 24px;
+  }
+  
+  
+  .contact-form {
+    padding: 21px;
+  }
+  
+  
+  .contact-direct-item {
+    gap: 14px;
+  }
+  
+  
+  .contact-direct-icon {
+    width: 46px;
+    
+    height: 46px;
+  }
+  
+  
+  .contact-faq-item {
+    padding: 0 17px;
+  }
+  
+  
+  .contact-faq-item summary {
+    padding: 20px 0;
+    
+    font-size: 14px;
+  }
+  
+  
+  .contact-faq-item p {
+    font-size: 14px;
+  }
+  
+  
+  .contact-cta {
+    padding: 70px 18px;
+  }
+  
+  
+  .contact-cta h2 {
+    font-size: 34px;
+  }
+  
+  .opportunity-detail-breadcrumb {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  
+  
+  .opportunity-detail-hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  
+  .opportunity-detail-hero-inner {
+    grid-template-columns:
+      52px minmax(0, 1fr);
+    
+    gap: 13px;
+  }
+  
+  
+  .opportunity-detail-logo {
+    width: 52px;
+    height: 52px;
+    
+    border-radius: 12px;
+    
+    font-size: 18px;
+  }
+  
+  
+  .opportunity-detail-heading h1 {
+    font-size: 27px;
+    
+    letter-spacing: -0.8px;
+  }
+  
+  
+  .opportunity-detail-org {
+    font-size: 12px;
+  }
+  
+  
+  .opportunity-detail-actions .opportunity-detail-apply {
+    min-height: 45px;
+    
+    padding: 0 15px;
+    
+    font-size: 13px;
+  }
+  
+  
+  .opportunity-detail-save {
+    width: 45px;
+    height: 45px;
+  }
+  
+  
+  .opportunity-detail-meta-item {
+    padding: 16px;
+  }
+  
+  
+  .meta-label {
+    font-size: 10px;
+  }
+  
+  
+  .meta-value {
+    font-size: 13px;
+  }
+  
+  
+  .opportunity-detail-section {
+    padding-top: 55px;
+    padding-bottom: 65px;
+  }
+  
+  
+  .opportunity-detail-block h2 {
+    font-size: 22px;
+  }
+  
+  
+  .opportunity-detail-block>div {
+    font-size: 13.5px;
+  }
+  
+  
+  .opportunity-detail-source {
+    padding: 20px 17px;
+  }
+  
+  
+  .opportunity-detail-source h3 {
+    font-size: 17px;
+  }
+  
+  
+  .opportunity-detail-sidebar-card {
+    padding: 20px;
+  }
+  
+  
+  .opportunity-detail-related {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  
+  
+  .opportunity-detail-related-header h2 {
+    font-size: 29px;
+  }
+  
+  
+  .opportunity-detail-related-header p {
+    font-size: 13px;
+  }
+  
+  
+  .opportunity-related-card {
+    padding: 20px;
+  }
+  
+  
+  .opportunity-detail-not-found h2 {
+    font-size: 27px;
+  }
+  
+  .submit-hero {
+    padding: 48px 0 55px;
+  }
+  
+  .submit-hero h1 {
+    font-size: 32px;
+  }
+  
+  .submit-hero-content>p:last-child {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+  
+  .submit-auth-notice-card {
+    padding: 20px;
+  }
+  
+  .submit-auth-notice-card h2 {
+    font-size: 20px;
+  }
+  
+  .submit-section {
+    padding: 52px 0 65px;
+  }
+  
+  .submit-form-intro {
+    margin-bottom: 27px;
+  }
+  
+  .submit-form-intro h2 {
+    font-size: 23px;
+  }
+  
+  .submit-form-group label {
+    font-size: 13px;
+  }
+  
+  .submit-form-group input,
+  .submit-form-group select {
+    min-height: 48px;
+  }
+  
+  .submit-form-group textarea {
+    min-height: 115px;
+  }
+  
+  .submit-sidebar-card {
+    padding: 20px;
+  }
+  
+  .submit-sidebar-card h3 {
+    font-size: 18px;
+  }
+  
+  .submit-success {
+    padding: 65px 0 75px;
+  }
+  
+  .submit-success h2 {
+    font-size: 27px;
+  }
+  
+}
 
+@media (prefers-reduced-motion: reduce) {
+  
+  .submit-form-group input,
+  .submit-form-group select,
+  .submit-form-group textarea,
+  .submit-btn-primary {
+    transition: none;
+  }
+  
+  .submit-btn-primary:hover {
+    transform: none;
+  }
+  
 }

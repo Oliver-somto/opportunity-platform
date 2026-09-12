@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
   
-    <link rel="stylesheet"
-    href="/css/style.css">
-    
-  <link rel="stylesheet"
-    href="/css/components.css">
-    
-  <link rel="stylesheet"
-    href="/css/responsive.css">
-    
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Jobs | Opportunity Platform</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/css/components.css">
+  
+  <link rel="stylesheet" href="/css/responsive.css">
+  
 </head>
+
 
 <body>
   
@@ -25,20 +26,19 @@
       
       <div class="header-inner">
         
+        
         <div class="logo">
           
           <a href="index.html">
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+          
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+            
           </a>
           
         </div>
         
-        <button class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false">
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
         
           <span></span>
           <span></span>
@@ -46,15 +46,15 @@
           
         </button>
         
-        <nav class="main-nav"
-          id="navigation">
+        
+        <nav class="main-nav" id="navigation">
+          
+          <a href="index.html">
+            Home
+          </a>
           
           <a href="scholarships.html">
             Scholarships
-          </a>
-          
-          <a href="jobs.html">
-            Jobs
           </a>
           
           <a href="internships.html">
@@ -85,26 +85,299 @@
     
   </header>
   
+  
   <main>
-  
-  
-  
+    
+    
+    <section class="job-hero">
+      
+      <div class="container">
+        
+        <div class="job-hero-content">
+          
+          
+          <p class="section-label">
+            JOBS
+          </p>
+          
+          
+          <h1>
+            Find Jobs
+            <span>For Your Future.</span>
+          </h1>
+          
+          
+          <p>
+            
+            Discover job opportunities from
+            companies, organizations, startups,
+            and institutions looking for talented
+            people around the world.
+            
+          </p>
+          
+          
+          <form class="job-search" id="job-search">
+            
+            <div class="job-search-input">
+              
+              <span aria-hidden="true">
+                ⌕
+              </span>
+              
+              <input type="search" id="job-search-input" placeholder="Search jobs..." aria-label="Search jobs">
+              
+            </div>
+            
+            
+            <button type="submit">
+              Search
+            </button>
+            
+          </form>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="job-section">
+      
+      <div class="container">
+        
+        
+        <div class="job-layout">
+          
+          <aside class="job-filters">
+            
+            <div class="filters-header">
+              
+              <h2>
+                Filter
+              </h2>
+              
+              <button type="button" id="clear-job-filters">
+              
+                Clear all
+                
+              </button>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="job-type">
+                Job Type
+              </label>
+              
+              <select id="job-type">
+              
+                <option value="">
+                  All job types
+                </option>
+                
+                <option value="full-time">
+                  Full-time
+                </option>
+                
+                <option value="part-time">
+                  Part-time
+                </option>
+                
+                <option value="contract">
+                  Contract
+                </option>
+                
+                <option value="temporary">
+                  Temporary
+                </option>
+                
+                <option value="remote">
+                  Remote
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="job-location">
+                Location
+              </label>
+              
+              <select id="job-location">
+              
+                <option value="">
+                  Any location
+                </option>
+                
+                <option value="nigeria">
+                  Nigeria
+                </option>
+                
+                <option value="usa">
+                  United States
+                </option>
+                
+                <option value="uk">
+                  United Kingdom
+                </option>
+                
+                <option value="canada">
+                  Canada
+                </option>
+                
+                <option value="australia">
+                  Australia
+                </option>
+                
+                <option value="remote">
+                  Remote
+                </option>
+                
+                <option value="international">
+                  International
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+            <div class="filter-group">
+              
+              <label for="experience-level">
+                Experience Level
+              </label>
+              
+              <select id="experience-level">
+              
+                <option value="">
+                  All levels
+                </option>
+                
+                <option value="entry-level">
+                  Entry Level
+                </option>
+                
+                <option value="mid-level">
+                  Mid Level
+                </option>
+                
+                <option value="senior-level">
+                  Senior Level
+                </option>
+                
+                <option value="management">
+                  Management
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            
+          </aside>
+          
+          <div class="job-results">
+            
+            
+            <div class="results-header">
+              
+              <div>
+                
+                <p class="results-label">
+                  OPPORTUNITIES
+                </p>
+                
+                <h2>
+                  Available Jobs
+                </h2>
+                
+              </div>
+              
+              
+              <select id="sort-jobs" aria-label="Sort jobs">
+              
+                <option value="latest">
+                  Latest
+                </option>
+                
+                <option value="deadline">
+                  Deadline
+                </option>
+                
+                <option value="title">
+                  Name
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            <div class="job-grid" id="job-list">
+              
+            </div>
+            
+            <div class="job-empty" id="job-empty" hidden>
+              
+              <div class="empty-icon">
+                🔎
+              </div>
+              
+              <h3>
+                No jobs found
+              </h3>
+              
+              <p>
+                Try changing your search
+                or filters.
+              </p>
+              
+            </div>
+            
+            <div class="job-load-more">
+              
+              <button type="button" id="load-more-jobs">
+              
+                Load More
+                
+              </button>
+              
+            </div>
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    
   </main>
-
-    <footer class="footer">
+  
+  
+  
+  <footer class="footer">
     
     <div class="container">
       
       <div class="footer-main">
         
+        
         <div class="footer-brand">
           
-          <a href="index.html"
-            class="footer-logo">
+          <a href="index.html" class="footer-logo">
           
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
             
           </a>
           
@@ -118,6 +391,7 @@
           </p>
           
         </div>
+        
         
         <div class="footer-column">
           
@@ -133,10 +407,6 @@
             
             <a href="internships.html">
               Internships
-            </a>
-            
-            <a href="jobs.html">
-              Jobs
             </a>
             
             <a href="fellowships.html">
@@ -155,6 +425,7 @@
           
         </div>
         
+        
         <div class="footer-column">
           
           <h3>
@@ -170,12 +441,13 @@
             <a href="contact.html">
               Contact
             </a>
+            
           </nav>
           
         </div>
         
-        <div
-          class="footer-column footer-connect">
+        
+        <div class="footer-column footer-connect">
           
           <h3>
             Stay Connected
@@ -187,12 +459,14 @@
             and important updates.
           </p>
           
-          <a href="contact.html"
-            class="footer-contact-link">
+          <a href="contact.html" class="footer-contact-link">
+          
             Get in Touch →
+            
           </a>
           
         </div>
+        
         
       </div>
       
@@ -222,7 +496,12 @@
     
   </footer>
   
-    <script src="/js/main.js"></script>
+  
+  
+  <script src="/js/main.js"></script>
+  
+  <script src="/js/jobs.js"></script>
+  
   
 </body>
 

@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  
+  <meta name="description" content="View opportunity details, eligibility, requirements, deadline, funding information, and application instructions.">
+  
+  <title>Opportunity Details | Opportunity Platform</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/css/components.css">
+  
+  <link rel="stylesheet" href="/css/responsive.css">
+  
 </head>
+
 
 <body>
   
@@ -18,17 +31,14 @@
         <div class="logo">
           
           <a href="index.html">
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+          
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+            
           </a>
           
         </div>
         
-        <button class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false">
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
         
           <span></span>
           <span></span>
@@ -36,8 +46,7 @@
           
         </button>
         
-        <nav class="main-nav"
-          id="navigation">
+        <nav class="main-nav" id="navigation">
           
           <a href="scholarships.html">
             Scholarships
@@ -56,7 +65,9 @@
           </a>
           
           <a href="auth.html" class="signUp">
+          
             Sign up
+            
           </a>
           
           <a href="about.html">
@@ -77,9 +88,458 @@
   
   
   
+  <main>
+    
+    <section class="opportunity-detail-breadcrumb">
+      
+      <div class="container">
+        
+        <nav class="breadcrumb-trail" id="breadcrumb-trail" aria-label="Breadcrumb">
+          
+          <a href="index.html">
+            Home
+          </a>
+          
+          <span aria-hidden="true">
+            /
+          </span>
+          
+          <a href="#" id="breadcrumb-category">
+          
+            Opportunities
+            
+          </a>
+          
+          <span aria-hidden="true">
+            /
+          </span>
+          
+          <span id="breadcrumb-current">
+          
+          </span>
+          
+        </nav>
+        
+      </div>
+      
+    </section>
+    
+    <section class="opportunity-detail-hero">
+      
+      <div class="container">
+        
+        <div class="opportunity-detail-hero-inner">
+          
+          <div class="opportunity-detail-logo" id="opportunity-detail-logo" aria-hidden="true">
+            
+          </div>
+          
+          <div class="opportunity-detail-heading">
+            
+            <span class="opportunity-detail-type" id="opportunity-detail-type">
+            
+            </span>
+            
+            
+            <h1 id="opportunity-detail-title">
+              
+            </h1>
+            
+            
+            <p class="opportunity-detail-org" id="opportunity-detail-org">
+              
+            </p>
+            
+          </div>
+          
+          <div class="opportunity-detail-actions">
+            
+            <a href="#" class="opportunity-detail-apply" id="opportunity-detail-apply" target="_blank" rel="noopener noreferrer">
+            
+              Apply Now
+              
+            </a>
+            
+          </div>
+          
+        </div>
+        
+        <div class="opportunity-detail-status" id="opportunity-detail-status">
+          
+          <div class="opportunity-detail-meta" id="opportunity-detail-meta">
+            
+            
+            <div class="opportunity-detail-meta-item">
+              
+              <span class="meta-label">
+                Deadline
+              </span>
+              
+              <span class="meta-value" id="meta-deadline">
+              
+              </span>
+              
+            </div>
+            
+            
+            <div class="opportunity-detail-meta-item">
+              
+              <span class="meta-label">
+                Location
+              </span>
+              
+              <span class="meta-value" id="meta-location">
+              
+              </span>
+              
+            </div>
+            
+            
+            <div class="opportunity-detail-meta-item">
+              
+              <span class="meta-label">
+                Study Level
+              </span>
+              
+              <span class="meta-value" id="meta-level">
+              
+              </span>
+              
+            </div>
+            
+            
+            <div class="opportunity-detail-meta-item">
+              
+              <span class="meta-label">
+                Funding
+              </span>
+              
+              <span class="meta-value" id="meta-funding">
+              
+              </span>
+              
+            </div>
+            
+            
+          </div>
+          
+        </div>
+        
+    </section>
+    
+    <section class="opportunity-detail-section">
+      
+      <div class="container">
+        
+        <div class="opportunity-detail-layout">
+          
+          <article class="opportunity-detail-main">
+            
+            <div class="opportunity-detail-block">
+              
+              <h2>
+                Overview
+              </h2>
+              
+              <div id="opportunity-detail-overview">
+                
+              </div>
+              
+            </div>
+            
+            <div class="opportunity-detail-block">
+              
+              <h2>
+                Eligibility
+              </h2>
+              
+              <div id="opportunity-detail-eligibility">
+                
+              </div>
+              
+            </div>
+            
+            <div class="opportunity-detail-block">
+              
+              <h2>
+                Requirements
+              </h2>
+              
+              <div id="opportunity-detail-requirements">
+                
+              </div>
+              
+            </div>
+            
+            <div class="opportunity-detail-block">
+              
+              <h2>
+                How to Apply
+              </h2>
+              
+              <div id="opportunity-detail-how-to-apply">
+                
+              </div>
+              
+            </div>
+            
+            <div class="opportunity-detail-block">
+              
+              <h2>
+                Important Information
+              </h2>
+              
+              <div id="opportunity-detail-important">
+                
+              </div>
+              
+            </div>
+            
+            <div class="opportunity-detail-source">
+              
+              <h3>
+                Official Opportunity Source
+              </h3>
+              
+              <p>
+                Always verify the opportunity details,
+                requirements, and deadline on the official
+                source before applying.
+              </p>
+              
+              <a href="#" id="opportunity-detail-source-link" target="_blank" rel="noopener noreferrer">
+              
+                Visit Official Source →
+                
+              </a>
+              
+            </div>
+            
+            <div class="opportunity-detail-updated">
+              
+              <span>
+                Last updated:
+              </span>
+              
+              <time id="opportunity-detail-updated">
+              
+              </time>
+              
+            </div>
+            
+            
+            
+          </article>
+          
+          <aside class="opportunity-detail-sidebar">
+            
+            <div class="opportunity-detail-sidebar-card">
+              
+              <h3>
+                Ready to apply?
+              </h3>
+              
+              <p id="sidebar-deadline-note">
+                
+              </p>
+              
+              <a href="#" class="opportunity-detail-apply" id="sidebar-apply" target="_blank" rel="noopener noreferrer">
+              
+                Apply Now
+                
+              </a>
+              
+            </div>
+            
+            <div class="opportunity-detail-sidebar-card">
+              
+              <h3>
+                Opportunity Details
+              </h3>
+              
+              
+              <div class="opportunity-detail-sidebar-info">
+                
+                
+                <div>
+                  
+                  <span>
+                    Type
+                  </span>
+                  
+                  <strong id="sidebar-type">
+                  
+                  </strong>
+                  
+                </div>
+                
+                
+                <div>
+                  
+                  <span>
+                    Organization
+                  </span>
+                  
+                  <strong id="sidebar-organization">
+                  
+                  </strong>
+                  
+                </div>
+                
+                
+                <div>
+                  
+                  <span>
+                    Location
+                  </span>
+                  
+                  <strong id="sidebar-location">
+                  
+                  </strong>
+                  
+                </div>
+                
+                
+                <div>
+                  
+                  <span>
+                    Deadline
+                  </span>
+                  
+                  <strong id="sidebar-deadline">
+                  
+                  </strong>
+                  
+                </div>
+                
+                
+              </div>
+              
+            </div>
+            
+            <div class="opportunity-detail-sidebar-card">
+              
+              <h3>
+                Share this opportunity
+              </h3>
+              
+              
+              <div class="opportunity-detail-share" id="opportunity-detail-share">
+                
+                
+                <button type="button" id="copy-opportunity-link" aria-label="Copy opportunity link">
+                
+                  🔗
+                  
+                </button>
+                
+                
+                <button type="button" id="share-opportunity-email" aria-label="Share by email">
+                
+                  ✉
+                  
+                </button>
+                
+                
+                <button type="button" id="share-opportunity" aria-label="Share opportunity">
+                
+                  ↗
+                  
+                </button>
+                
+                
+              </div>
+              
+            </div>
+            
+            <div class="opportunity-detail-sidebar-card opportunity-detail-report">
+              
+              <p>
+                Found an issue with this opportunity?
+              </p>
+              
+              <button type="button" id="report-opportunity">
+              
+                Report this opportunity
+                
+              </button>
+              
+            </div>
+            
+            
+          </aside>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="opportunity-detail-related">
+      
+      <div class="container">
+        
+        <div class="opportunity-detail-related-header">
+          
+          <span class="opportunity-detail-section-label">
+            YOU MAY ALSO LIKE
+          </span>
+          
+          <h2>
+            Similar Opportunities
+          </h2>
+          
+          <p>
+            Explore other opportunities that may
+            match your interests and eligibility.
+          </p>
+          
+        </div>
+        
+        
+        <div class="opportunity-detail-related-grid" id="related-opportunities-list">
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="opportunity-detail-not-found" id="opportunity-detail-not-found" hidden>
+      
+      <div class="container">
+        
+        <div class="not-found-icon">
+          🔎
+        </div>
+        
+        
+        <h2>
+          Opportunity not found
+        </h2>
+        
+        
+        <p>
+          This opportunity may have been removed
+          or the link is no longer valid.
+        </p>
+        
+        
+        <a href="index.html" class="opportunity-detail-apply">
+        
+          Browse Opportunities
+          
+        </a>
+        
+      </div>
+      
+    </section>
+    
+    
+  </main>
   
-  
-    <footer class="footer">
+  <footer class="footer">
     
     <div class="container">
       
@@ -87,14 +547,12 @@
         
         <div class="footer-brand">
           
-          <a href="index.html"
-            class="footer-logo">
+          <a href="index.html" class="footer-logo">
           
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
             
           </a>
+          
           
           <p>
             Discover scholarships,
@@ -112,6 +570,7 @@
           <h3>
             Opportunities
           </h3>
+          
           
           <nav class="footer-links">
             
@@ -136,7 +595,9 @@
             </a>
             
             <a href="auth.html" class="signUp">
+            
               Sign up
+              
             </a>
             
           </nav>
@@ -149,6 +610,7 @@
             Platform
           </h3>
           
+          
           <nav class="footer-links">
             
             <a href="about.html">
@@ -158,16 +620,17 @@
             <a href="contact.html">
               Contact
             </a>
+            
           </nav>
           
         </div>
         
-        <div
-          class="footer-column footer-connect">
+        <div class="footer-column footer-connect">
           
           <h3>
             Stay Connected
           </h3>
+          
           
           <p>
             Stay informed about new
@@ -175,15 +638,17 @@
             and important updates.
           </p>
           
-          <a href="contact.html"
-            class="footer-contact-link">
+          
+          <a href="contact.html" class="footer-contact-link">
+          
             Get in Touch →
+            
           </a>
           
         </div>
         
+        
       </div>
-      
       
       <div class="footer-bottom">
         
@@ -191,6 +656,7 @@
           © 2026 Opportunity Platform.
           All rights reserved.
         </p>
+        
         
         <div class="footer-legal">
           
@@ -209,6 +675,11 @@
     </div>
     
   </footer>
+  
+  <script src="/js/main.js"></script>
+  
+  <script src="/js/opportunity-detail.js"></script>
+  
   
 </body>
 

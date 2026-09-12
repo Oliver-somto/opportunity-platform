@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  
+  <meta name="description" content="Submit a scholarship, job, internship, fellowship, or grant to Opportunity Platform.">
+  
+  <title>Submit an Opportunity | Opportunity Platform</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <link rel="stylesheet" href="/css/components.css">
+  
+  <link rel="stylesheet" href="/css/responsive.css">
+  
+  <link rel="stylesheet" href="/css/submit-opportunity.css">
+  
 </head>
+
 
 <body>
   
@@ -15,20 +30,19 @@
       
       <div class="header-inner">
         
+        
         <div class="logo">
           
           <a href="index.html">
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+          
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
+            
           </a>
           
         </div>
         
-        <button class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Open navigation menu"
-          aria-expanded="false">
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
         
           <span></span>
           <span></span>
@@ -36,8 +50,8 @@
           
         </button>
         
-        <nav class="main-nav"
-          id="navigation">
+        
+        <nav class="main-nav" id="navigation" aria-label="Main navigation">
           
           <a href="scholarships.html">
             Scholarships
@@ -77,41 +91,771 @@
   
   
   
+  <main>
+    
+    <section class="submit-breadcrumb">
+      
+      <div class="container">
+        
+        <nav class="submit-breadcrumb-trail" aria-label="Breadcrumb">
+          
+          <a href="index.html">
+            Home
+          </a>
+          
+          <span aria-hidden="true">
+            /
+          </span>
+          
+          <span>
+            Submit an Opportunity
+          </span>
+          
+        </nav>
+        
+      </div>
+      
+    </section>
+    
+    <section class="submit-hero">
+      
+      <div class="container">
+        
+        <div class="submit-hero-content">
+          
+          
+          <p class="section-label">
+            SUBMIT AN OPPORTUNITY
+          </p>
+          
+          
+          <h1>
+            
+            Seen an opportunity
+            <span>we're missing?</span>
+            
+          </h1>
+          
+          
+          <p>
+            
+            Help students, graduates, and
+            job seekers discover opportunities
+            that can move their careers and
+            education forward.
+            
+          </p>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="submit-auth-notice" id="submit-auth-notice" hidden>
+      
+      <div class="container">
+        
+        <div class="submit-auth-notice-card">
+          
+          
+          <div class="submit-auth-notice-icon" aria-hidden="true">
+            🔐
+          </div>
+          
+          
+          <div class="submit-auth-notice-content">
+            
+            <h2>
+              Sign in to submit an opportunity
+            </h2>
+            
+            <p>
+              
+              You'll need an account so we can
+              follow up with you about your
+              submission and credit you once
+              it's published.
+              
+            </p>
+            
+            
+            <a href="auth.html" class="submit-btn-primary">
+            
+              Sign In / Sign Up
+              
+            </a>
+            
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="submit-section" id="submit-form-section">
+      
+      <div class="container">
+        
+        <div class="submit-layout">
+          
+          <form class="submit-form" id="submit-opportunity-form" novalidate>
+            
+            <div class="submit-form-intro">
+              
+              <h2>
+                Opportunity information
+              </h2>
+              
+              <p>
+                Provide accurate information
+                about the opportunity. Fields
+                marked with <span>*</span> are
+                required.
+              </p>
+              
+            </div>
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-type">
+              
+                Opportunity Type
+                <span aria-hidden="true">*</span>
+                
+              </label>
+              
+              
+              <select id="opportunity-type" name="opportunity-type" required>
+              
+                <option value="">
+                  Select a type
+                </option>
+                
+                <option value="scholarship">
+                  Scholarship
+                </option>
+                
+                <option value="job">
+                  Job
+                </option>
+                
+                <option value="internship">
+                  Internship
+                </option>
+                
+                <option value="fellowship">
+                  Fellowship
+                </option>
+                
+                <option value="grant">
+                  Grant
+                </option>
+                
+              </select>
+              
+            </div>
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-title">
+              
+                Opportunity Title
+                <span aria-hidden="true">*</span>
+                
+              </label>
+              
+              
+              <input type="text" id="opportunity-title" name="opportunity-title" placeholder="e.g. Mastercard Foundation Scholars Program" autocomplete="off" required>
+              
+              
+              <small class="submit-form-help">
+              
+                Use the official name of the
+                opportunity.
+                
+              </small>
+              
+            </div>
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-org">
+              
+                Organization / Provider
+                <span aria-hidden="true">*</span>
+                
+              </label>
+              
+              
+              <input type="text" id="opportunity-org" name="opportunity-org" placeholder="e.g. University of Toronto" autocomplete="organization" required>
+              
+            </div>
+            
+            <div class="submit-form-row">
+              
+              
+              <div class="submit-form-group">
+                
+                <label for="opportunity-location">
+                
+                  Location
+                  <span aria-hidden="true">*</span>
+                  
+                </label>
+                
+                
+                <select id="opportunity-location" name="opportunity-location" required>
+                
+                  <option value="">
+                    Select a location
+                  </option>
+                  
+                  <option value="nigeria">
+                    Nigeria
+                  </option>
+                  
+                  <option value="usa">
+                    United States
+                  </option>
+                  
+                  <option value="uk">
+                    United Kingdom
+                  </option>
+                  
+                  <option value="canada">
+                    Canada
+                  </option>
+                  
+                  <option value="australia">
+                    Australia
+                  </option>
+                  
+                  <option value="international">
+                    International
+                  </option>
+                  
+                </select>
+                
+              </div>
+              
+              
+              
+              <div class="submit-form-group">
+                
+                <label for="opportunity-deadline">
+                
+                  Application Deadline
+                  <span aria-hidden="true">*</span>
+                  
+                </label>
+                
+                
+                <input type="date" id="opportunity-deadline" name="opportunity-deadline" required>
+                
+              </div>
+              
+              
+            </div>
+            
+            <div class="submit-form-row">
+              
+              
+              <div class="submit-form-group">
+                
+                <label for="opportunity-study-level">
+                
+                  Study Level
+                  <span aria-hidden="true">*</span>
+                </label>
+                
+                
+                <select id="opportunity-study-level" name="opportunity-study-level" required>
+                
+                  <option value="">
+                    Not applicable
+                  </option>
+                  
+                  <option value="undergraduate">
+                    Undergraduate
+                  </option>
+                  
+                  <option value="masters">
+                    Master's
+                  </option>
+                  
+                  <option value="phd">
+                    PhD
+                  </option>
+                  
+                  <option value="postgraduate">
+                    Postgraduate
+                  </option>
+                  
+                </select>
+                
+              </div>
+              
+              
+              
+              <div class="submit-form-group">
+                
+                <label for="opportunity-funding-type">
+                
+                  Funding Type
+                  <span aria-hidden="true">*</span>
+                </label>
+                
+                
+                <select id="opportunity-funding-type" name="opportunity-funding-type" required>
+                
+                  <option value="">
+                    Not applicable
+                  </option>
+                  
+                  <option value="fully-funded">
+                    Fully Funded
+                  </option>
+                  
+                  <option value="partial">
+                    Partially Funded
+                  </option>
+                  
+                  <option value="tuition">
+                    Tuition Support
+                  </option>
+                  
+                  <option value="stipend">
+                    Stipend
+                  </option>
+                </select>
+                
+              </div>
+              
+              
+            </div>
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-link">
+              
+                Official Application Link
+                <span aria-hidden="true">*</span>
+                
+              </label>
+              
+              
+              <input type="url" id="opportunity-link" name="opportunity-link" placeholder="https://example.com/apply" inputmode="url" autocomplete="url" required>
+              
+              
+              <small class="submit-form-help">
+              
+                Link directly to the official
+                application or opportunity page.
+                
+              </small>
+              
+            </div>
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-description">
+              
+                Description
+                <span aria-hidden="true">*</span>
+                
+              </label>
+              
+              
+              <textarea id="opportunity-description" name="opportunity-description" rows="6" placeholder="What is this opportunity about? Include the main purpose, benefits, and who it is intended for." required></textarea>
+              
+              
+              <small class="submit-form-help">
+              
+                Give applicants enough information
+                to understand what the opportunity
+                offers.
+                
+              </small>
+              
+            </div>
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-eligibility">
+              
+                Eligibility Requirements
+                <span aria-hidden="true">*</span>
+              </label>
+              
+              
+              <textarea id="opportunity-eligibility" name="opportunity-eligibility" rows="5" placeholder="Who can apply? Include requirements such as nationality, age, education level, field of study, work experience, or other conditions." required></textarea>
+              
+            </div>
+            
+            <div class="submit-form-divider">
+              
+              <span>
+                Additional Information
+              </span>
+              
+            </div>
+            
+            
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-requirements">
+              
+                Application Requirements
+                
+              </label>
+              
+              
+              <textarea id="opportunity-requirements" name="opportunity-requirements" rows="4" placeholder="What documents or materials are applicants expected to provide?"></textarea>
+              
+            </div>
+            
+            
+            
+            <div class="submit-form-group">
+              
+              <label for="opportunity-benefits">
+              
+                Benefits / Funding Details
+                
+              </label>
+              
+              
+              <textarea id="opportunity-benefits" name="opportunity-benefits" rows="4" placeholder="What does the opportunity provide? For example: tuition, stipend, accommodation, salary, training, travel support, or other benefits."></textarea>
+              
+            </div>
+            
+            <div class="submit-form-divider">
+              
+              <span>
+                Your Details
+              </span>
+              
+            </div>
+            
+            
+            
+            <div class="submit-form-row">
+              
+              
+              <div class="submit-form-group">
+                
+                <label for="submitter-name">
+                
+                  Your Name
+                  <span aria-hidden="true">*</span>
+                  
+                </label>
+                
+                
+                <input type="text" id="submitter-name" name="submitter-name" placeholder="Jane Doe" autocomplete="name" required>
+                
+              </div>
+              
+              
+              
+              <div class="submit-form-group">
+                
+                <label for="submitter-email">
+                
+                  Your Email
+                  <span aria-hidden="true">*</span>
+                  
+                </label>
+                
+                
+                <input type="email" id="submitter-email" name="submitter-email" placeholder="jane@email.com" autocomplete="email" required>
+                
+              </div>
+              
+              
+            </div>
+            
+            <div class="submit-form-checkbox">
+              
+              <input type="checkbox" id="submitter-confirm" name="submitter-confirm" required>
+              
+              
+              <label for="submitter-confirm">
+              
+                I confirm that the information
+                provided is accurate to the best
+                of my knowledge and that the
+                opportunity is from a legitimate
+                source.
+                
+              </label>
+              
+            </div>
+            
+            <div class="submit-review-note">
+              
+              <div class="submit-review-note-icon" aria-hidden="true">
+                
+                ✓
+                
+              </div>
+              
+              
+              <div>
+                
+                <strong>
+                  Every submission is reviewed
+                </strong>
+                
+                <p>
+                  
+                  Your submission will not be
+                  published immediately. Our team
+                  will review the information and
+                  may contact you if clarification
+                  is needed.
+                  
+                </p>
+                
+              </div>
+              
+            </div>
+            
+            <button type="submit" class="submit-btn-primary" id="submit-opportunity-btn">
+            
+              <span class="submit-btn-text">
+                Submit for Review
+              </span>
+              
+              <span class="submit-btn-loading" aria-hidden="true" hidden>
+              
+                Submitting...
+                
+              </span>
+              
+            </button>
+            
+            
+          </form>
+          
+          <aside class="submit-sidebar">
+            
+            <div class="submit-sidebar-card">
+              
+              <div class="submit-sidebar-icon" aria-hidden="true">
+                📝
+              </div>
+              
+              
+              <h3>
+                What happens next?
+              </h3>
+              
+              
+              <ol>
+                
+                <li>
+                  
+                  <strong>
+                    Submit
+                  </strong>
+                  
+                  <span>
+                    Send us the opportunity
+                    details and official link.
+                  </span>
+                  
+                </li>
+                
+                
+                <li>
+                  
+                  <strong>
+                    Review
+                  </strong>
+                  
+                  <span>
+                    Our team checks the
+                    information and source.
+                  </span>
+                  
+                </li>
+                
+                
+                <li>
+                  
+                  <strong>
+                    Publish
+                  </strong>
+                  
+                  <span>
+                    Approved opportunities go
+                    live on the platform.
+                  </span>
+                  
+                </li>
+                
+                
+              </ol>
+              
+            </div>
+            
+            <div class="submit-sidebar-card">
+              
+              <div class="submit-sidebar-icon" aria-hidden="true">
+                ✓
+              </div>
+              
+              
+              <h3>
+                Submission guidelines
+              </h3>
+              
+              
+              <ul>
+                
+                <li>
+                  Only share opportunities
+                  that are still open.
+                </li>
+                
+                <li>
+                  Use the official application
+                  link whenever possible.
+                </li>
+                
+                <li>
+                  Provide accurate eligibility
+                  and funding information.
+                </li>
+                
+                <li>
+                  Avoid duplicate listings
+                  already on the platform.
+                </li>
+                
+                <li>
+                  Do not submit misleading or
+                  fraudulent opportunities.
+                </li>
+                
+              </ul>
+              
+            </div>
+            
+            <div class="submit-sidebar-card submit-sidebar-card-note">
+              
+              <h3>
+                Before you submit
+              </h3>
+              
+              
+              <p>
+                
+                Please verify the opportunity
+                directly from the provider's
+                official website. We recommend
+                that applicants also verify
+                deadlines and requirements
+                before applying.
+                
+              </p>
+              
+            </div>
+            
+            
+          </aside>
+          
+          
+        </div>
+        
+      </div>
+      
+    </section>
+    
+    <section class="submit-success" id="submit-success" hidden>
+      
+      <div class="container">
+        
+        
+        <div class="success-icon" aria-hidden="true">
+          
+          ✓
+          
+        </div>
+        
+        
+        <h2>
+          Thanks, it's in review!
+        </h2>
+        
+        
+        <p>
+          
+          We've received your submission.
+          We'll notify you by email once
+          it's been reviewed.
+          
+        </p>
+        
+        
+        <a href="index.html" class="submit-btn-primary">
+        
+          Back to Home
+          
+        </a>
+        
+        
+      </div>
+      
+    </section>
+    
+    
+    
+  </main>
   
-  
-    <footer class="footer">
+  <footer class="footer">
     
     <div class="container">
       
       <div class="footer-main">
         
+        
         <div class="footer-brand">
           
-          <a href="index.html"
-            class="footer-logo">
+          <a href="index.html" class="footer-logo">
           
-            <img
-              src="images/logos/logo.png"
-              alt="Opportunity Platform logo">
+            <img src="images/logos/logo.png" alt="Opportunity Platform logo">
             
           </a>
           
+          
           <p>
+            
             Discover scholarships,
             internships,
             jobs, fellowships, and
             grants designed
             to help you take your next
             step.
+            
           </p>
           
         </div>
+        
+        
         
         <div class="footer-column">
           
           <h3>
             Opportunities
           </h3>
+          
           
           <nav class="footer-links">
             
@@ -136,18 +880,23 @@
             </a>
             
             <a href="auth.html" class="signUp">
+            
               Sign up
+              
             </a>
             
           </nav>
           
         </div>
         
+        
+        
         <div class="footer-column">
           
           <h3>
             Platform
           </h3>
+          
           
           <nav class="footer-links">
             
@@ -158,39 +907,51 @@
             <a href="contact.html">
               Contact
             </a>
+            
           </nav>
           
         </div>
         
-        <div
-          class="footer-column footer-connect">
+        
+        
+        <div class="footer-column footer-connect">
           
           <h3>
             Stay Connected
           </h3>
           
+          
           <p>
+            
             Stay informed about new
-            opportunities
-            and important updates.
+            opportunities and important
+            updates.
+            
           </p>
           
-          <a href="contact.html"
-            class="footer-contact-link">
+          
+          <a href="contact.html" class="footer-contact-link">
+          
             Get in Touch →
+            
           </a>
           
         </div>
         
+        
       </div>
+      
       
       
       <div class="footer-bottom">
         
         <p>
+          
           © 2026 Opportunity Platform.
           All rights reserved.
+          
         </p>
+        
         
         <div class="footer-legal">
           
@@ -209,6 +970,12 @@
     </div>
     
   </footer>
+  
+  
+  
+  <script src="/js/main.js"></script>
+  
+  <script src="/js/submit-opportunity.js"></script>
   
 </body>
 
